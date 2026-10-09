@@ -1,0 +1,8 @@
+{
+	"core": null,
+	"themes": [ "./praxis", "./praxis-child" ],
+	"config": {
+		"WP_DEBUG": true,
+		"SCRIPT_DEBUG": true
+	}
+}

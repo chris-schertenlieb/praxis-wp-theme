@@ -1,0 +1,19 @@
+{
+	"name": "praxis-wp-theme",
+	"private": true,
+	"description": "Praxis — an open source Gutenberg block theme and child theme.",
+	"license": "GPL-2.0-or-later",
+	"workspaces": [
+		"praxis"
+	],
+	"scripts": {
+		"build": "npm run build --workspace=praxis",
+		"start": "npm run start --workspace=praxis",
+		"lint": "npm run lint --workspace=praxis",
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop"
+	},
+	"devDependencies": {
+		"@wordpress/env": "^10.0.0"
+	}
+}

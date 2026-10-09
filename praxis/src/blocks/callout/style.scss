@@ -1,0 +1,10 @@
+// Front-end and editor styles.
+.wp-block-praxis-callout {
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+	border-left: 4px solid var(--wp--preset--color--primary);
+	background-color: var(--wp--preset--color--secondary);
+
+	p {
+		margin: 0;
+	}
+}
