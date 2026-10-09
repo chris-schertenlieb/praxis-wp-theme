@@ -16,7 +16,6 @@ npm-debug.log*
 .env
 .env.*
 !.env.example
-.wp-env.override.json
 
 # OS / editor
 .DS_Store

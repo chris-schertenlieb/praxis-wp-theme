@@ -21,17 +21,27 @@ praxis-child/   Starter child theme for site-specific customisation
 npm install          # installs root + praxis workspace deps
 npm run build        # builds custom blocks into praxis/build/
 npm run start        # watch mode while developing blocks
+npm run lint         # lint block JS + SCSS
+composer lint        # lint PHP (after `composer install`)
 ```
 
-### Local WordPress (optional)
+See [CONTRIBUTING.md](CONTRIBUTING.md) for coding standards and the PR workflow.
 
-Uses [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) (requires Docker):
+### Local WordPress
 
-```bash
-npm run env:start    # http://localhost:8888  (admin / password)
+Any local WordPress install works. Point its `wp-content/themes/praxis` and `wp-content/themes/praxis-child` at the two folders in this repo, so edits show up on reload with nothing to copy. With [Lando](https://lando.dev/), from a site that sits next to this repo:
+
+```yaml
+# .lando.yml
+services:
+  appserver:
+    overrides:
+      volumes:
+        - ../praxis-wp-theme/praxis:/app/wp-content/themes/praxis
+        - ../praxis-wp-theme/praxis-child:/app/wp-content/themes/praxis-child
 ```
 
-Both themes are mounted automatically; activate **Praxis Child** (or **Praxis**) under Appearance → Themes.
+Run `lando rebuild -y`, then activate **Praxis Child** (or **Praxis**) under Appearance → Themes. Run `npm run build`, or keep `npm run start` running, so custom block changes are compiled.
 
 ## Header, footer & sample content
 

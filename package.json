@@ -9,11 +9,12 @@
 	"scripts": {
 		"build": "npm run build --workspace=praxis",
 		"start": "npm run start --workspace=praxis",
-		"lint": "npm run lint --workspace=praxis",
-		"env:start": "wp-env start",
-		"env:stop": "wp-env stop"
+		"lint": "npm run lint --workspace=praxis"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^10.0.0"
+		"typescript": "^5.0.0"
+	},
+	"overrides": {
+		"typescript": "^5.0.0"
 	}
 }
