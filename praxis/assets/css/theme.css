@@ -2,3 +2,94 @@
  * Front-end styles that can't be expressed in theme.json.
  * Prefer theme.json and block styles wherever possible.
  */
+
+/* Keep the footer at the bottom of short pages. */
+.wp-site-blocks {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+body.admin-bar .wp-site-blocks {
+	min-height: calc(100dvh - var(--wp-admin--admin-bar--height, 0px));
+}
+
+.wp-site-blocks > main {
+	flex-grow: 1;
+}
+
+/*
+ * "Sticky header" block style (core/group, registered in inc/blocks.php).
+ * The template part wrapper is what sticks, so the header stays put for the
+ * whole page. The frosted background lives on a pseudo-element because
+ * backdrop-filter on the group itself would trap the fixed-position mobile
+ * navigation overlay inside the header.
+ */
+.wp-site-blocks > header:has(> .is-style-praxis-sticky) {
+	position: sticky;
+	top: var(--wp-admin--admin-bar--height, 0px);
+	z-index: 100;
+}
+
+@media (max-width: 600px) {
+	/* The admin bar scrolls away on small screens. */
+	.wp-site-blocks > header:has(> .is-style-praxis-sticky) {
+		top: 0;
+	}
+}
+
+.is-style-praxis-sticky {
+	position: relative;
+	isolation: isolate;
+}
+
+.is-style-praxis-sticky::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-color: color-mix(in srgb, var(--wp--preset--color--base) 82%, transparent);
+	border-bottom: 1px solid color-mix(in srgb, var(--wp--preset--color--contrast) 8%, transparent);
+	-webkit-backdrop-filter: saturate(180%) blur(12px);
+	backdrop-filter: saturate(180%) blur(12px);
+}
+
+/* Header navigation: animated underline on hover and keyboard focus. */
+header.wp-block-template-part .wp-block-navigation-item__content {
+	background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+	transition: background-size 0.2s ease;
+}
+
+header.wp-block-template-part .wp-block-navigation-item__content:hover,
+header.wp-block-template-part .wp-block-navigation-item__content:focus-visible {
+	background-size: 100% 1px;
+}
+
+/* Mobile navigation overlay: big, bold, left-aligned links. */
+header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	align-items: flex-start;
+	padding-top: var(--wp--preset--spacing--50);
+}
+
+header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+	align-items: flex-start;
+	gap: var(--wp--preset--spacing--30);
+}
+
+header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item {
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.wp-element-button {
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	header.wp-block-template-part .wp-block-navigation-item__content,
+	.wp-element-button {
+		transition: none;
+	}
+}

@@ -28,6 +28,22 @@ function praxis_register_blocks() {
 add_action( 'init', 'praxis_register_blocks' );
 
 /**
+ * Registers block styles for core blocks.
+ *
+ * Their CSS lives in assets/css/theme.css.
+ */
+function praxis_register_block_styles() {
+	register_block_style(
+		'core/group',
+		array(
+			'name'  => 'praxis-sticky',
+			'label' => __( 'Sticky header', 'praxis' ),
+		)
+	);
+}
+add_action( 'init', 'praxis_register_block_styles' );
+
+/**
  * Adds a "Praxis" category to the block inserter.
  *
  * @param array $categories Existing block categories.
