@@ -25,6 +25,17 @@ Custom blocks are in src/blocks and must be compiled before use:
 = 0.1.0 =
 * Initial scaffolding.
 
+== Credits ==
+
+Fonts are bundled from Fontsource (https://fontsource.org) and licensed under the SIL Open Font License 1.1. Each font folder in assets/fonts/ includes its license.
+
+* Space Grotesk, (C) 2020 The Space Grotesk Project Authors
+* Inter, (C) 2016 The Inter Project Authors
+* Bricolage Grotesque, (C) 2022 The Bricolage Grotesque Project Authors
+* Figtree, (C) 2022 The Figtree Project Authors
+* Fraunces, (C) 2020 The Fraunces Project Authors
+* Instrument Sans, (C) 2022 The Instrument Sans Project Authors
+
 == Copyright ==
 
 Praxis WordPress Theme, (C) 2026 Chris Schertenlieb

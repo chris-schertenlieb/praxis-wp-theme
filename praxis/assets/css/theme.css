@@ -28,11 +28,12 @@ body.admin-bar .wp-site-blocks {
  */
 .wp-site-blocks > header:has(> .is-style-praxis-sticky) {
 	position: sticky;
-	top: var(--wp-admin--admin-bar--height, 0px);
+	top: var(--wp-admin--admin-bar--height, 0);
 	z-index: 100;
 }
 
 @media (max-width: 600px) {
+
 	/* The admin bar scrolls away on small screens. */
 	.wp-site-blocks > header:has(> .is-style-praxis-sticky) {
 		top: 0;
@@ -57,8 +58,8 @@ body.admin-bar .wp-site-blocks {
 
 /* Header navigation: animated underline on hover and keyboard focus. */
 header.wp-block-template-part .wp-block-navigation-item__content {
-	background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
-	transition: background-size 0.2s ease;
+	background: linear-gradient(currentcolor, currentcolor) 0 100% / 0 1px no-repeat;
+	transition: background-size var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
 }
 
 header.wp-block-template-part .wp-block-navigation-item__content:hover,
@@ -78,18 +79,21 @@ header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu
 }
 
 header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item {
+	font-family: var(--wp--preset--font-family--heading);
 	font-size: var(--wp--preset--font-size--x-large);
 	font-weight: 700;
 	letter-spacing: -0.02em;
 }
 
 .wp-element-button {
-	transition: background-color 0.2s ease, color 0.2s ease;
+	transition: background-color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing), color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
 }
 
 @media (prefers-reduced-motion: reduce) {
+
 	header.wp-block-template-part .wp-block-navigation-item__content,
 	.wp-element-button {
 		transition: none;
 	}
 }
+

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Terracotta",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "base", "name": "Base", "color": "#fbf8f3" },
+				{ "slug": "surface", "name": "Surface", "color": "#f6f0e7" },
+				{ "slug": "secondary", "name": "Secondary", "color": "#f3e7d8" },
+				{ "slug": "border", "name": "Border", "color": "#e2d5c4" },
+				{ "slug": "muted", "name": "Muted", "color": "#675d53" },
+				{ "slug": "contrast", "name": "Contrast", "color": "#211c17" },
+				{ "slug": "primary", "name": "Primary", "color": "#a8401b" },
+				{ "slug": "accent", "name": "Accent", "color": "#2f5d50" }
+			]
+		}
+	}
+}

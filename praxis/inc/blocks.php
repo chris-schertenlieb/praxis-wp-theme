@@ -76,3 +76,27 @@ function praxis_missing_build_notice() {
 	);
 }
 add_action( 'admin_notices', 'praxis_missing_build_notice' );
+
+/**
+ * Enqueues per-block stylesheets for core blocks from assets/css/blocks/.
+ *
+ * A file named core-<block>.css is loaded only on pages that contain that
+ * block, and in the editor. Use it for the few rules theme.json can't express.
+ */
+function praxis_enqueue_block_styles() {
+	foreach ( glob( PRAXIS_DIR . '/assets/css/blocks/core-*.css' ) as $file ) {
+		$slug = basename( $file, '.css' );
+		$name = 'core/' . substr( $slug, strlen( 'core-' ) );
+
+		wp_enqueue_block_style(
+			$name,
+			array(
+				'handle' => 'praxis-' . $slug,
+				'src'    => PRAXIS_URI . '/assets/css/blocks/' . $slug . '.css',
+				'path'   => $file,
+				'ver'    => PRAXIS_VERSION,
+			)
+		);
+	}
+}
+add_action( 'init', 'praxis_enqueue_block_styles' );

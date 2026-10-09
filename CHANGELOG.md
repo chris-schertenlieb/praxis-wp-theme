@@ -11,12 +11,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - PHP coding standards tooling (`composer.json`, `phpcs.xml.dist`) using WordPress Coding Standards and PHPCompatibilityWP.
 - `CONTRIBUTING.md` and this changelog.
 - Committed `package-lock.json` and `composer.lock`.
+- Design system in `theme.json`: an 8-color palette (deep teal `#003d3d` primary, lime accent) checked for WCAG AA contrast, a 7-step fluid type scale, a 7-step spacing scale, radius and shadow presets, and styles for buttons, quotes, pullquotes, tables, code, images, captions, separators, navigation, post titles and site titles.
+- Self-hosted, OFL-licensed variable fonts in `assets/fonts/` (latin + latin-ext): Space Grotesk and Inter by default, plus Bricolage Grotesque, Figtree, Fraunces and Instrument Sans for the style variations.
+- Style variations: Dark, High contrast and Warm, plus color presets (Indigo, Terracotta) and typography presets (Signal, Editorial).
+- Per-block stylesheets for core blocks in `assets/css/blocks/core-<block>.css`, loaded only when the block is on the page.
 
 ### Changed
 
 - Redesigned header: sticky, frosted-glass bar with bold site title, centered navigation with an animated underline, a pill "Get in touch" button, and a large-type mobile menu. Stickiness is a "Sticky header" group block style, so it can be switched off in the Site Editor.
 - Redesigned footer: dark band with a call-to-action headline, link and social columns, and a bottom bar with copyright and a back-to-top link.
 - Buttons get a hover/focus color in `theme.json`.
+- Font family presets now use role slugs (`heading`, `body`, `monospace`) instead of `system-sans`/`system-mono`, so variations can swap fonts without touching block styles.
+- `theme.css` uses `theme.json` custom tokens for transitions instead of hardcoded values.
+- `npm run lint:css` also checks `assets/css/`.
 
 ### Fixed
 

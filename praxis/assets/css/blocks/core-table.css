@@ -1,0 +1,8 @@
+/*
+ * Table cells follow the table's border color (Styles → Blocks → Table).
+ * theme.json block styles use zero-specificity :where() selectors, which
+ * lose to core's `.wp-block-table td` rule.
+ */
+.wp-block-table table :is(th, td) {
+	border-color: inherit;
+}

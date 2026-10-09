@@ -9,7 +9,7 @@
 		"start": "wp-scripts start --webpack-src-dir=src/blocks --output-path=build/blocks --blocks-manifest",
 		"lint": "npm run lint:js && npm run lint:css",
 		"lint:js": "wp-scripts lint-js src",
-		"lint:css": "wp-scripts lint-style \"src/**/*.scss\"",
+		"lint:css": "wp-scripts lint-style \"src/**/*.scss\" \"assets/css/**/*.css\"",
 		"format": "wp-scripts format src"
 	},
 	"devDependencies": {
