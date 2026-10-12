@@ -21,11 +21,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Previous/next post navigation on single posts.
 - Switchable header and footer designs, each a pattern (pick it under Replace in the Site Editor) and a template part: Centered and Minimal headers, Minimal and Columns footers, alongside the existing Classic header and Dark footer.
 - "Inverse" section style (`styles/sections/section-inverse.json`) for Group, Columns, Column and Cover blocks.
+- Custom templates: Landing (no header or footer), Wide, and With Sidebar, plus a `sidebar` template part with search, recent posts and topics.
 
 ### Changed
 
 - Single, page and "Page (No Title)" templates: post content is now full width with its own constrained layout, so wide and full-width blocks inside a post break out of the text column.
-- Single posts: category label above the title, date and author meta, wide 16:9 featured image, and comments with avatars.
+- Single posts: category label above the title, date and author meta, wide 16:9 featured image, and comments with avatars. Comments fill whatever column they're in, so they line up in the Wide and With Sidebar templates.
 - Blog, archive and index templates show posts as a responsive card grid; archives get a header with the term description.
 - Search shows a compact results list with an empty-state message; the 404 page gets a larger heading, search and a link home.
 - The dark footer uses the Inverse section style instead of fixed palette colors. The Dark variation recolors it, so its footer is no longer a light band with near-invisible labels.

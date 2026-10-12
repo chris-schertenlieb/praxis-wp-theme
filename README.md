@@ -61,6 +61,15 @@ To switch, open a template in **Appearance → Editor**, select the header or fo
 
 To make your own, go to **Appearance → Editor → Patterns → Template Parts → Add new**, choose the Header or Footer area, and build it from blocks. It then appears alongside the built-in designs.
 
+### Page templates
+
+Besides the default templates, pages and posts can pick one of these in the editor's **Template** panel:
+
+- **Page (No Title)**: the default page without its title.
+- **Landing (No Header or Footer)**: just the content, for pages that bring their own hero and call to action.
+- **Wide**: the content column widens to the theme's wide size.
+- **With Sidebar**: content beside a sidebar (search, recent posts, topics). The sidebar is its own template part, so it can be edited in the Site Editor.
+
 The dark footer band is the **Inverse** section style (`praxis/styles/sections/section-inverse.json`). Apply it to any Group, Columns or Cover block from the block's Styles panel, and style variations such as Dark recolor it automatically.
 
 When the theme is activated on an empty site, `praxis/inc/starter-content.php` runs once and creates:

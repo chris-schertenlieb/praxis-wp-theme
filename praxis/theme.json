@@ -340,9 +340,13 @@
 		{ "name": "footer-minimal", "title": "Footer (Minimal)", "area": "footer" },
 		{ "name": "footer-columns", "title": "Footer (Columns)", "area": "footer" },
 		{ "name": "post-meta", "title": "Post Meta", "area": "uncategorized" },
-		{ "name": "comments", "title": "Comments", "area": "uncategorized" }
+		{ "name": "comments", "title": "Comments", "area": "uncategorized" },
+		{ "name": "sidebar", "title": "Sidebar", "area": "uncategorized" }
 	],
 	"customTemplates": [
-		{ "name": "page-no-title", "title": "Page (No Title)", "postTypes": [ "page" ] }
+		{ "name": "page-no-title", "title": "Page (No Title)", "postTypes": [ "page" ] },
+		{ "name": "landing", "title": "Landing (No Header or Footer)", "postTypes": [ "page" ] },
+		{ "name": "wide", "title": "Wide", "postTypes": [ "page", "post" ] },
+		{ "name": "with-sidebar", "title": "With Sidebar", "postTypes": [ "page", "post" ] }
 	]
 }
