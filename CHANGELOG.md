@@ -19,6 +19,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `post-meta` and `comments` template parts, editable in the Site Editor.
 - "Pills" block style for Post Terms, used for tags on single posts.
 - Previous/next post navigation on single posts.
+- Switchable header and footer designs, each a pattern (pick it under Replace in the Site Editor) and a template part: Centered and Minimal headers, Minimal and Columns footers, alongside the existing Classic header and Dark footer.
+- "Inverse" section style (`styles/sections/section-inverse.json`) for Group, Columns, Column and Cover blocks.
 
 ### Changed
 
@@ -26,6 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Single posts: category label above the title, date and author meta, wide 16:9 featured image, and comments with avatars.
 - Blog, archive and index templates show posts as a responsive card grid; archives get a header with the term description.
 - Search shows a compact results list with an empty-state message; the 404 page gets a larger heading, search and a link home.
+- The dark footer uses the Inverse section style instead of fixed palette colors. The Dark variation recolors it, so its footer is no longer a light band with near-invisible labels.
 - Redesigned header: sticky, frosted-glass bar with bold site title, centered navigation with an animated underline, a pill "Get in touch" button, and a large-type mobile menu. Stickiness is a "Sticky header" group block style, so it can be switched off in the Site Editor.
 - Redesigned footer: dark band with a call-to-action headline, link and social columns, and a bottom bar with copyright and a back-to-top link.
 - Buttons get a hover/focus color in `theme.json`.

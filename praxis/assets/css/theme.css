@@ -85,6 +85,34 @@ header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu
 	letter-spacing: -0.02em;
 }
 
+/* Centered header: title and menu button side by side on small screens. */
+@media (max-width: 599px) {
+
+	.wp-block-group.praxis-header-centered {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/* Footer link lists (Categories, Latest Posts): no bullets, tight spacing. */
+.praxis-plain-list {
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+.praxis-plain-list li + li {
+	margin-top: var(--wp--preset--spacing--20);
+}
+
+.praxis-plain-list a {
+	text-decoration: none;
+}
+
+.praxis-plain-list a:hover,
+.praxis-plain-list a:focus-visible {
+	text-decoration: underline;
+}
+
 /* "Pills" block style (core/post-terms): each term as a rounded tag. */
 .wp-block-post-terms.is-style-praxis-pills {
 	display: flex;

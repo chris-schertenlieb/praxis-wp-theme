@@ -22,5 +22,23 @@
 				{ "slug": "lg", "name": "Large", "shadow": "0 12px 24px -6px rgba(0, 0, 0, 0.5), 0 4px 8px -4px rgba(0, 0, 0, 0.4)" }
 			]
 		}
+	},
+	"styles": {
+		"variations": {
+			"section-inverse": {
+				"color": { "background": "var:preset|color|surface", "text": "var:preset|color|contrast" },
+				"elements": {
+					"heading": { "color": { "text": "var:preset|color|contrast" } },
+					"link": {
+						"color": { "text": "var:preset|color|contrast" },
+						":hover": { "color": { "text": "var:preset|color|accent" } }
+					},
+					"button": {
+						"color": { "background": "var:preset|color|accent", "text": "var:preset|color|base" },
+						":hover": { "color": { "background": "var:preset|color|contrast", "text": "var:preset|color|base" } }
+					}
+				}
+			}
+		}
 	}
 }

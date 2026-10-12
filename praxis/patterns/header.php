@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Header
+ * Title: Classic header
  * Slug: praxis/header
  * Categories: header
  * Block Types: core/template-part/header
@@ -16,22 +16,20 @@
  * @package Praxis
  */
 
-$praxis_nav_attrs = array(
-	'overlayMenu' => 'mobile',
-	'layout'      => array(
-		'type'           => 'flex',
-		'justifyContent' => 'center',
-	),
-	'style'       => array(
-		'spacing' => array( 'blockGap' => 'var:preset|spacing|40' ),
-	),
-	'fontSize'    => 'small',
+$praxis_nav_attrs = praxis_navigation_attrs(
+	'primary',
+	array(
+		'overlayMenu' => 'mobile',
+		'layout'      => array(
+			'type'           => 'flex',
+			'justifyContent' => 'center',
+		),
+		'style'       => array(
+			'spacing' => array( 'blockGap' => 'var:preset|spacing|40' ),
+		),
+		'fontSize'    => 'small',
+	)
 );
-
-$praxis_nav_id = praxis_get_sample_navigation_id( 'primary' );
-if ( $praxis_nav_id ) {
-	$praxis_nav_attrs = array( 'ref' => $praxis_nav_id ) + $praxis_nav_attrs;
-}
 
 $praxis_cta_url = praxis_get_sample_page_url( 'contact' );
 ?>

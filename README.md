@@ -47,6 +47,22 @@ Run `lando rebuild -y`, then activate **Praxis Child** (or **Praxis**) under App
 
 The header and footer are template parts (`praxis/parts/`) that load the `praxis/header` and `praxis/footer` patterns, so they are fully editable in **Appearance → Editor → Patterns → Template Parts**.
 
+### Switching header and footer designs
+
+Praxis ships several designs for each:
+
+| Header | Footer |
+|---|---|
+| Classic: logo, centered menu, call to action | Dark: call-to-action band with link and social columns |
+| Centered: logo and title above the menu | Minimal: one row with title, menu and copyright |
+| Minimal: title and a full-screen menu button | Columns: pages, topics and recent posts |
+
+To switch, open a template in **Appearance → Editor**, select the header or footer, and pick a design from the block's sidebar or the **Replace** option in its toolbar. Each design is also a template part (`header-centered`, `footer-columns` and so on), so different templates can use different headers or footers.
+
+To make your own, go to **Appearance → Editor → Patterns → Template Parts → Add new**, choose the Header or Footer area, and build it from blocks. It then appears alongside the built-in designs.
+
+The dark footer band is the **Inverse** section style (`praxis/styles/sections/section-inverse.json`). Apply it to any Group, Columns or Cover block from the block's Styles panel, and style variations such as Dark recolor it automatically.
+
 When the theme is activated on an empty site, `praxis/inc/starter-content.php` runs once and creates:
 
 - **About** and **Contact** sample pages
