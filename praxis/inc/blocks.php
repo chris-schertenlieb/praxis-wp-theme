@@ -40,6 +40,14 @@ function praxis_register_block_styles() {
 			'label' => __( 'Sticky header', 'praxis' ),
 		)
 	);
+
+	register_block_style(
+		'core/post-terms',
+		array(
+			'name'  => 'praxis-pills',
+			'label' => __( 'Pills', 'praxis' ),
+		)
+	);
 }
 add_action( 'init', 'praxis_register_block_styles' );
 

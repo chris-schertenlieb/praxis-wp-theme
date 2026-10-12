@@ -15,9 +15,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Self-hosted, OFL-licensed variable fonts in `assets/fonts/` (latin + latin-ext): Space Grotesk and Inter by default, plus Bricolage Grotesque, Figtree, Fraunces and Instrument Sans for the style variations.
 - Style variations: Dark, High contrast and Warm, plus color presets (Indigo, Terracotta) and typography presets (Signal, Editorial).
 - Per-block stylesheets for core blocks in `assets/css/blocks/core-<block>.css`, loaded only when the block is on the page.
+- `home.html` template for the blog index, with a "Latest posts" heading.
+- `post-meta` and `comments` template parts, editable in the Site Editor.
+- "Pills" block style for Post Terms, used for tags on single posts.
+- Previous/next post navigation on single posts.
 
 ### Changed
 
+- Single, page and "Page (No Title)" templates: post content is now full width with its own constrained layout, so wide and full-width blocks inside a post break out of the text column.
+- Single posts: category label above the title, date and author meta, wide 16:9 featured image, and comments with avatars.
+- Blog, archive and index templates show posts as a responsive card grid; archives get a header with the term description.
+- Search shows a compact results list with an empty-state message; the 404 page gets a larger heading, search and a link home.
 - Redesigned header: sticky, frosted-glass bar with bold site title, centered navigation with an animated underline, a pill "Get in touch" button, and a large-type mobile menu. Stickiness is a "Sticky header" group block style, so it can be switched off in the Site Editor.
 - Redesigned footer: dark band with a call-to-action headline, link and social columns, and a bottom bar with copyright and a back-to-top link.
 - Buttons get a hover/focus color in `theme.json`.

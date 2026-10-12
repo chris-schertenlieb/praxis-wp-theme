@@ -334,7 +334,9 @@
 	},
 	"templateParts": [
 		{ "name": "header", "title": "Header", "area": "header" },
-		{ "name": "footer", "title": "Footer", "area": "footer" }
+		{ "name": "footer", "title": "Footer", "area": "footer" },
+		{ "name": "post-meta", "title": "Post Meta", "area": "uncategorized" },
+		{ "name": "comments", "title": "Comments", "area": "uncategorized" }
 	],
 	"customTemplates": [
 		{ "name": "page-no-title", "title": "Page (No Title)", "postTypes": [ "page" ] }

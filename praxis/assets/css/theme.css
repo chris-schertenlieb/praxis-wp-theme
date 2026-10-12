@@ -85,6 +85,32 @@ header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu
 	letter-spacing: -0.02em;
 }
 
+/* "Pills" block style (core/post-terms): each term as a rounded tag. */
+.wp-block-post-terms.is-style-praxis-pills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--wp--preset--spacing--20);
+}
+
+.wp-block-post-terms.is-style-praxis-pills .wp-block-post-terms__separator {
+	display: none;
+}
+
+.wp-block-post-terms.is-style-praxis-pills a {
+	padding: 0.3em 0.9em;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: var(--wp--preset--border-radius--full);
+	color: var(--wp--preset--color--contrast);
+	text-decoration: none;
+	transition: border-color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing), color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
+}
+
+.wp-block-post-terms.is-style-praxis-pills a:hover,
+.wp-block-post-terms.is-style-praxis-pills a:focus-visible {
+	border-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--primary);
+}
+
 .wp-element-button {
 	transition: background-color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing), color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
 }
@@ -92,6 +118,7 @@ header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu
 @media (prefers-reduced-motion: reduce) {
 
 	header.wp-block-template-part .wp-block-navigation-item__content,
+	.wp-block-post-terms.is-style-praxis-pills a,
 	.wp-element-button {
 		transition: none;
 	}
