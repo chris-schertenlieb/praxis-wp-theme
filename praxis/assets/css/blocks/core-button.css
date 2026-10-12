@@ -1,0 +1,8 @@
+/*
+ * Outline buttons on Inverse sections. The outline variation's primary text
+ * color would vanish on a dark band, so follow the band's text color
+ * instead. Hover and focus keep the section's own button colors.
+ */
+.is-style-section-inverse .wp-block-button.is-style-outline > .wp-block-button__link:not(:hover):not(:focus-visible) {
+	color: inherit;
+}

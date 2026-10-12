@@ -36,6 +36,8 @@ Fonts are bundled from Fontsource (https://fontsource.org) and licensed under th
 * Fraunces, (C) 2020 The Fraunces Project Authors
 * Instrument Sans, (C) 2022 The Instrument Sans Project Authors
 
+Images in assets/images/ (illustrations, avatars and placeholder logos) were made for Praxis and are released under CC0. The people and companies they show are fictional.
+
 == Copyright ==
 
 Praxis WordPress Theme, (C) 2026 Chris Schertenlieb

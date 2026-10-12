@@ -74,8 +74,8 @@ $praxis_nav_attrs = praxis_navigation_attrs(
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:group {"align":"wide","style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30)">
+	<!-- wp:group {"align":"wide","style":{"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30)">
 		<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
 		<p class="has-muted-color has-text-color has-small-font-size"><?php echo esc_html( praxis_copyright_text() ); ?></p>
 		<!-- /wp:paragraph -->

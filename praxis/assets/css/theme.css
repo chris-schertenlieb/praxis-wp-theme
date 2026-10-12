@@ -20,6 +20,19 @@ body.admin-bar .wp-site-blocks {
 }
 
 /*
+ * Pages that open or close with a full-width section (a hero, a dark call
+ * to action) sit flush against the header and footer instead of leaving a
+ * strip of background between them.
+ */
+.wp-site-blocks > main:has(> .wp-block-post-content:first-child > .alignfull:first-child) {
+	margin-block-start: 0;
+}
+
+.wp-site-blocks > main:has(> .wp-block-post-content:last-child > .alignfull:last-child) + * {
+	margin-block-start: 0;
+}
+
+/*
  * "Sticky header" block style (core/group, registered in inc/blocks.php).
  * The template part wrapper is what sticks, so the header stays put for the
  * whole page. The frosted background lives on a pseudo-element because
@@ -126,7 +139,7 @@ header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu
 
 .wp-block-post-terms.is-style-praxis-pills a {
 	padding: 0.3em 0.9em;
-	border: 1px solid var(--wp--preset--color--border);
+	border: 1px solid var(--wp--preset--color--line);
 	border-radius: var(--wp--preset--border-radius--full);
 	color: var(--wp--preset--color--contrast);
 	text-decoration: none;
@@ -152,3 +165,35 @@ header.wp-block-template-part .wp-block-navigation__responsive-container.is-menu
 	}
 }
 
+
+/*
+ * Reveal on scroll: add the `praxis-reveal` class to a section (Advanced →
+ * Additional CSS class) and its direct children fade and rise into view as
+ * they enter the screen. Pure CSS (scroll-driven animations), front end only.
+ * Browsers without support, and visitors who prefer reduced motion, see the
+ * content straight away.
+ */
+@media (prefers-reduced-motion: no-preference) {
+
+	@supports (animation-timeline: view()) {
+
+		.praxis-reveal > * {
+			animation: praxis-reveal linear both;
+			animation-timeline: view();
+			animation-range: entry 0% entry 70%;
+		}
+	}
+}
+
+@keyframes praxis-reveal {
+
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}

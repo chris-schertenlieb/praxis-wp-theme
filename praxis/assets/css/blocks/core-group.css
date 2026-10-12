@@ -1,0 +1,61 @@
+/*
+ * Aurora: add the `praxis-aurora` class to a full-width Group (Advanced →
+ * Additional CSS class) for slowly drifting color glows and a faint grid
+ * behind its content. Pair it with the Inverse section style. Motion stops
+ * when the visitor prefers reduced motion.
+ */
+.wp-block-group.praxis-aurora {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+}
+
+.wp-block-group.praxis-aurora::before,
+.wp-block-group.praxis-aurora::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.wp-block-group.praxis-aurora::before {
+	inset: -40%;
+	background:
+		radial-gradient(closest-side at 22% 30%, color-mix(in srgb, var(--wp--preset--color--primary) 70%, transparent), transparent),
+		radial-gradient(closest-side at 78% 22%, color-mix(in srgb, var(--wp--preset--color--accent) 26%, transparent), transparent),
+		radial-gradient(closest-side at 62% 82%, color-mix(in srgb, var(--wp--preset--color--primary) 55%, transparent), transparent);
+	filter: blur(24px);
+	animation: praxis-aurora 24s ease-in-out infinite alternate;
+}
+
+.wp-block-group.praxis-aurora::after {
+	inset: 0;
+	background-image:
+		linear-gradient(color-mix(in srgb, currentcolor 7%, transparent) 1px, transparent 1px),
+		linear-gradient(90deg, color-mix(in srgb, currentcolor 7%, transparent) 1px, transparent 1px);
+	background-size: 56px 56px;
+	-webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 20%, transparent 75%);
+	mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 20%, transparent 75%);
+}
+
+@keyframes praxis-aurora {
+
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+	}
+
+	50% {
+		transform: translate3d(6%, -4%, 0) rotate(8deg) scale(1.08);
+	}
+
+	100% {
+		transform: translate3d(-5%, 5%, 0) rotate(-6deg) scale(1.02);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.wp-block-group.praxis-aurora::before {
+		animation: none;
+	}
+}

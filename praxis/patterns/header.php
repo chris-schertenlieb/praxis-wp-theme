@@ -50,7 +50,7 @@ $praxis_cta_url = praxis_get_sample_page_url( 'contact' );
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
 			<!-- wp:button {"fontSize":"small","style":{"border":{"radius":"999px"},"spacing":{"padding":{"top":"0.6em","bottom":"0.6em","left":"1.25em","right":"1.25em"}}}} -->
-			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( $praxis_cta_url ); ?>" style="border-radius:999px;padding-top:0.6em;padding-right:1.25em;padding-bottom:0.6em;padding-left:1.25em"><?php esc_html_e( 'Get in touch', 'praxis' ); ?></a></div>
+			<div class="wp-block-button"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button" href="<?php echo esc_url( $praxis_cta_url ); ?>" style="border-radius:999px;padding-top:0.6em;padding-right:1.25em;padding-bottom:0.6em;padding-left:1.25em"><?php esc_html_e( 'Get in touch', 'praxis' ); ?></a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->

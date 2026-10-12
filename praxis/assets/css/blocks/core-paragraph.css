@@ -1,0 +1,8 @@
+/*
+ * "Eyebrow" paragraphs (styles/blocks/eyebrow.json) use the primary color.
+ * On Inverse sections, follow the band's text color instead so they stay
+ * readable whatever color the section is.
+ */
+.is-style-section-inverse .is-style-eyebrow {
+	color: color-mix(in srgb, currentcolor 72%, transparent);
+}

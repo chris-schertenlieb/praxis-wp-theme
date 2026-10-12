@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Pattern library under "Praxis: …" inserter categories: Aurora, Centered and Text-and-image heroes; Features grid, Image and checklist, Block showcase (bento grid) and Style variations showcase; Logo wall, Stats and Testimonials; Pricing table; FAQ; Team; Contact details; Banner and Split calls to action; and Latest posts.
+- Page patterns (Landing, About, Services and pricing, Contact) offered when creating a new page, built from the section patterns.
+- Starter content now creates a Home page from the Landing page pattern and sets it as the static front page, builds About and Contact from their page patterns, and adds a Blog page as the posts page. It still only runs on empty sites.
+- `wp praxis starter-content [--force]` WP-CLI command to install the starter content on demand, or reset the sample pages and menus.
+- Block styles: Card (Group, Column) and Eyebrow (Paragraph) as JSON style variations in `styles/blocks/`, and Checklist for the List block.
+- `praxis-aurora` (animated glows behind a section) and `praxis-reveal` (fade in on scroll) CSS classes. Both are CSS only and respect reduced motion.
+- Details block styling: dividers between items and a plus/cross toggle.
+- Bundled, CC0 illustrations, avatars and placeholder logos in `assets/images/`.
 - PHP coding standards tooling (`composer.json`, `phpcs.xml.dist`) using WordPress Coding Standards and PHPCompatibilityWP.
 - `CONTRIBUTING.md` and this changelog.
 - Committed `package-lock.json` and `composer.lock`.
@@ -39,6 +47,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+- The "Border" palette color (slug `border`) generated a `.has-border-color` text-color class that clashes with the class core adds to any block with a custom border color, so those blocks got pale text. The slug is now `line` ("Line"). Sites that used `var(--wp--preset--color--border)` in custom CSS need to switch to `--line`.
+- Outline buttons on Inverse sections were nearly invisible; they now follow the section's text color.
+- Warm variation: buttons on Inverse sections used dark text on a dark green background. They now use the primary color.
+- The header's "Get in touch" button and the post meta separator saved markup the editor had to migrate on load ("block contains unexpected content" risk).
+- No strip of background between the header and a page that opens with a full-width section, or between a closing full-width section and the footer.
 - Stray separator line in the footer.
 - Footer no longer stops partway up the screen on short pages.
 

@@ -8,7 +8,7 @@
 				{ "slug": "base", "name": "Base", "color": "#fbf8f3" },
 				{ "slug": "surface", "name": "Surface", "color": "#f6f0e7" },
 				{ "slug": "secondary", "name": "Secondary", "color": "#f3e7d8" },
-				{ "slug": "border", "name": "Border", "color": "#e2d5c4" },
+				{ "slug": "line", "name": "Line", "color": "#e2d5c4" },
 				{ "slug": "muted", "name": "Muted", "color": "#675d53" },
 				{ "slug": "contrast", "name": "Contrast", "color": "#211c17" },
 				{ "slug": "primary", "name": "Primary", "color": "#a8401b" },
@@ -127,6 +127,19 @@
 		"blocks": {
 			"core/pullquote": { "typography": { "fontStyle": "italic", "fontWeight": "400", "letterSpacing": "0" } },
 			"core/quote": { "border": { "left": { "color": "var:preset|color|primary" } } }
+		},
+		"variations": {
+			"section-inverse": {
+				"elements": {
+					"link": {
+						":hover": { "color": { "text": "var:preset|color|secondary" } }
+					},
+					"button": {
+						"color": { "background": "var:preset|color|primary", "text": "var:preset|color|base" },
+						":hover": { "color": { "background": "var:preset|color|base", "text": "var:preset|color|contrast" } }
+					}
+				}
+			}
 		}
 	}
 }

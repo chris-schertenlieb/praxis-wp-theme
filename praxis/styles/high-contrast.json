@@ -8,7 +8,7 @@
 				{ "slug": "base", "name": "Base", "color": "#ffffff" },
 				{ "slug": "surface", "name": "Surface", "color": "#f2f2f2" },
 				{ "slug": "secondary", "name": "Secondary", "color": "#e3eeed" },
-				{ "slug": "border", "name": "Border", "color": "#000000" },
+				{ "slug": "line", "name": "Line", "color": "#000000" },
 				{ "slug": "muted", "name": "Muted", "color": "#2e2e2e" },
 				{ "slug": "contrast", "name": "Contrast", "color": "#000000" },
 				{ "slug": "primary", "name": "Primary", "color": "#002929" },

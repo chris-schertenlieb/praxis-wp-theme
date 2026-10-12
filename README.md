@@ -74,15 +74,51 @@ The dark footer band is the **Inverse** section style (`praxis/styles/sections/s
 
 When the theme is activated on an empty site, `praxis/inc/starter-content.php` runs once and creates:
 
-- **About** and **Contact** sample pages
+- A **Home** page built from the Landing page pattern, set as the static front page
+- **About** and **Contact** pages built from their page patterns, and an empty **Blog** page set as the posts page
 - **Primary** and **Footer** Navigation menus, used by the header and footer
 - A sample site tagline, if the site still has the WordPress default
 
-All sample posts carry the `_praxis_sample_content` meta key so they can be found and removed later. To turn this off:
+It never runs on a site that already has content, menus or a static front page. All sample posts carry the `_praxis_sample_content` meta key so they can be found and removed later. To turn this off:
 
 ```php
 add_filter( 'praxis_install_sample_content', '__return_false' );
 ```
+
+To install it on demand, for example on a development site that isn't empty, use WP-CLI:
+
+```bash
+wp praxis starter-content                # same rules as activation
+wp praxis starter-content --force --yes  # install anyway, or reset the sample pages
+```
+
+`--force` reuses the sample pages and menus if they still exist, resets their content to the theme's current patterns, and makes Home the front page. It doesn't touch anything else.
+
+## Patterns
+
+Praxis ships a pattern library under **Praxis: …** categories in the inserter (each pattern also appears in the matching core category):
+
+| Category | Patterns |
+|---|---|
+| Heroes | Centered, Aurora (dark, animated glows), Text and image |
+| Features | Features grid, Image and checklist, Block showcase (bento grid), Style variations showcase |
+| Social proof | Logo wall, Stats, Testimonials |
+| Pricing, FAQ, Team, Contact | Pricing table, FAQ (core Details block), Team grid, Contact details |
+| Calls to action | Banner, Split |
+| Posts | Latest posts |
+| Pages | Landing, About, Services and pricing, Contact |
+
+Page patterns appear in the **Choose a pattern** dialog when you add a new page. They're built from the section patterns, so every section can also be inserted on its own. Use them with the **Page (No Title)** template so the page opens with its hero. Images are bundled in `praxis/assets/images/`; the people and companies in them are fictional placeholders.
+
+### Styles used by the patterns
+
+- **Card** (Group, Column) and **Eyebrow** (Paragraph) block styles, defined as JSON in `praxis/styles/blocks/` so they can be restyled in **Styles → Blocks**.
+- **Checklist** block style for the List block.
+- Two optional CSS classes, added under **Advanced → Additional CSS class(es)**:
+  - `praxis-aurora` on a full-width Group: slowly drifting color glows and a faint grid. Pair it with the Inverse section style.
+  - `praxis-reveal` on a section: its contents fade and rise in as they scroll into view. This is pure CSS and only runs in browsers that support scroll-driven animations.
+
+  Both stop moving for visitors who prefer reduced motion.
 
 ## Custom blocks
 

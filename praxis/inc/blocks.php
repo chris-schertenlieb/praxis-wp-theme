@@ -30,7 +30,9 @@ add_action( 'init', 'praxis_register_blocks' );
 /**
  * Registers block styles for core blocks.
  *
- * Their CSS lives in assets/css/theme.css.
+ * Their CSS lives in assets/css/theme.css, or in assets/css/blocks/ when it
+ * should also load in the editor. Block styles that theme.json can express
+ * (Card, Eyebrow, Inverse) are JSON files in styles/ instead.
  */
 function praxis_register_block_styles() {
 	register_block_style(
@@ -46,6 +48,14 @@ function praxis_register_block_styles() {
 		array(
 			'name'  => 'praxis-pills',
 			'label' => __( 'Pills', 'praxis' ),
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'  => 'praxis-checklist',
+			'label' => __( 'Checklist', 'praxis' ),
 		)
 	);
 }
