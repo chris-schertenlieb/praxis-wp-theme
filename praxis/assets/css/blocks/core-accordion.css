@@ -1,0 +1,42 @@
+/*
+ * Accordion block: styled like the Details block, with a divider under each
+ * item and a plus sign that core turns into a cross when an item opens.
+ * Fonts, dividers and spacing are in theme.json.
+ */
+.wp-block-accordion-heading {
+	margin: 0;
+}
+
+.wp-block-accordion-heading__toggle {
+	gap: var(--wp--preset--spacing--30);
+	padding-block: var(--wp--preset--spacing--30);
+	transition: color var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
+}
+
+.wp-block-accordion-heading__toggle:hover {
+	color: var(--wp--preset--color--primary);
+}
+
+.wp-block-accordion-heading__toggle:hover .wp-block-accordion-heading__toggle-title {
+	text-decoration: none;
+}
+
+.wp-block-accordion-heading__toggle:focus-visible {
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 4px;
+}
+
+.wp-block-accordion-heading__toggle-icon {
+	flex-shrink: 0;
+	font-family: var(--wp--preset--font-family--body);
+	font-size: 1.5em;
+	font-weight: 300;
+	color: var(--wp--preset--color--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.wp-block-accordion-heading__toggle {
+		transition: none;
+	}
+}

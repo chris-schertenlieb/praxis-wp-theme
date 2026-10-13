@@ -3,9 +3,9 @@
  * Title: FAQ
  * Slug: praxis/faq
  * Categories: praxis-faq, text
- * Keywords: faq, questions, answers, accordion, details, help
+ * Keywords: faq, questions, answers, accordion, help
  * Viewport Width: 1400
- * Description: A heading and short intro beside a list of questions that open to show their answers, built with the core Details block.
+ * Description: A heading and short intro beside a list of questions that open to show their answers, built with the core Accordion block.
  *
  * @package Praxis
  */
@@ -44,17 +44,32 @@ $praxis_intro = sprintf(
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
+		<!-- wp:column -->
 		<div class="wp-block-column">
-			<?php foreach ( $praxis_questions as $praxis_index => $praxis_question ) : ?>
-			<!-- wp:details<?php echo 0 === $praxis_index ? ' {"showContent":true}' : ''; ?> -->
-			<details class="wp-block-details"<?php echo 0 === $praxis_index ? ' open' : ''; ?>><summary><?php echo esc_html( $praxis_question[0] ); ?></summary>
-				<!-- wp:paragraph -->
-				<p><?php echo esc_html( $praxis_question[1] ); ?></p>
-				<!-- /wp:paragraph -->
-			</details>
-			<!-- /wp:details -->
+			<!-- wp:accordion -->
+			<div role="group" class="wp-block-accordion">
+			<?php
+			foreach ( $praxis_questions as $praxis_index => $praxis_question ) :
+				$praxis_open = 0 === $praxis_index;
+				?>
+				<!-- wp:accordion-item<?php echo $praxis_open ? ' {"openByDefault":true}' : ''; ?> -->
+				<div class="wp-block-accordion-item<?php echo $praxis_open ? ' is-open' : ''; ?>">
+					<!-- wp:accordion-heading<?php echo $praxis_open ? ' {"openByDefault":true}' : ''; ?> -->
+					<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php echo esc_html( $praxis_question[0] ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+					<!-- /wp:accordion-heading -->
+
+					<!-- wp:accordion-panel -->
+					<div role="region" class="wp-block-accordion-panel">
+						<!-- wp:paragraph -->
+						<p><?php echo esc_html( $praxis_question[1] ); ?></p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:accordion-panel -->
+				</div>
+				<!-- /wp:accordion-item -->
 			<?php endforeach; ?>
+			</div>
+			<!-- /wp:accordion -->
 		</div>
 		<!-- /wp:column -->
 	</div>

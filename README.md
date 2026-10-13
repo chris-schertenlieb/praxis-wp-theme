@@ -11,7 +11,7 @@ praxis-child/   Starter child theme for site-specific customisation
 
 ## Requirements
 
-- WordPress 6.8+
+- WordPress 6.9+
 - PHP 7.4+
 - Node.js 20+ (for building custom blocks)
 
@@ -104,7 +104,7 @@ Praxis ships a pattern library under **Praxis: …** categories in the inserter 
 | Heroes | Centered, Aurora (dark, animated glows), Text and image |
 | Features | Features grid, Image and checklist, Block showcase (bento grid), Style variations showcase |
 | Social proof | Logo wall, Stats, Testimonials |
-| Pricing, FAQ, Team, Contact | Pricing table, FAQ (core Details block), Team grid, Contact details |
+| Pricing, FAQ, Team, Contact | Pricing table, FAQ (core Accordion block), Team grid, Contact details |
 | Calls to action | Banner, Split |
 | Posts | Latest posts |
 | Pages | Landing, About, Services and pricing, Contact, Pattern demo |
@@ -123,7 +123,18 @@ Page patterns appear in the **Choose a pattern** dialog when you add a new page.
 
 ## Custom blocks
 
-Blocks live in `praxis/src/blocks/<block-name>/` and are auto-registered from the compiled `praxis/build/blocks/` directory via a block manifest. To add a block, create a new folder alongside `callout/` with a `block.json` and rebuild.
+Praxis adds blocks only where core falls short, under the **Praxis** inserter category:
+
+| Block | What it does |
+|---|---|
+| **Callout** | Highlights a Note, Tip, Warning or Success message. Holds any blocks; switch the type from the block card in the sidebar. Each type has its own icon and accent color, and screen readers hear the type ("Warning:") first. Accent colors are `settings.custom.callout` in `theme.json`, so style variations can retune them. |
+| **Table of Contents** | Lists the post's headings (H2 down to a level you choose, nested), linking to each one. Shows nothing until the post has two headings to list. |
+
+Heading blocks in post content get an `id` generated from their text (`inc/headings.php`), unless you've set an HTML anchor, so the Table of Contents and shared links can point at them.
+
+Core blocks cover the rest. Accordion, Tabs, Icon and Time to Read (shown in the post meta) are styled to match in `theme.json` and `praxis/assets/css/blocks/`.
+
+Blocks live in `praxis/src/blocks/<block-name>/` and are auto-registered from the compiled `praxis/build/blocks/` directory via a block manifest. Dynamic blocks render with a `render.php` next to their `block.json`. To add a block, create a new folder alongside `callout/` with a `block.json` and rebuild.
 
 ## Releasing
 

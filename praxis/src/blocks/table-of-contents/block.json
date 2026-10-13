@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "praxis/table-of-contents",
+	"version": "0.2.0",
+	"title": "Table of Contents",
+	"category": "praxis",
+	"icon": "list-view",
+	"description": "List the headings on the page, with links to each one.",
+	"keywords": [ "toc", "contents", "headings", "navigation", "on this page" ],
+	"textdomain": "praxis",
+	"usesContext": [ "postId", "postType" ],
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"link": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"showTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"maxLevel": {
+			"type": "number",
+			"enum": [ 2, 3, 4, 5, 6 ],
+			"default": 3
+		},
+		"ordered": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"example": {},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

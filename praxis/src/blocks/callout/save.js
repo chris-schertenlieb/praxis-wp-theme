@@ -1,9 +1,10 @@
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { InnerBlocks } from '@wordpress/block-editor';
 
-export default function save( { attributes } ) {
-	return (
-		<div { ...useBlockProps.save() }>
-			<RichText.Content tagName="p" value={ attributes.content } />
-		</div>
-	);
+/*
+ * Only the inner blocks are saved. render.php adds the wrapper, the type
+ * label for screen readers and the icon, so they can change without
+ * invalidating saved content.
+ */
+export default function save() {
+	return <InnerBlocks.Content />;
 }

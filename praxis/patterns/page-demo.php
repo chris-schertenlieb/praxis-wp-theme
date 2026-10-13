@@ -30,8 +30,10 @@
 	<p class="has-muted-color has-text-color has-large-font-size"><?php esc_html_e( 'A preview of patterns that need your own content before they go on a real page. Insert them from the block inserter under Patterns → Praxis: Social proof.', 'praxis' ); ?></p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:praxis/callout -->
-	<div class="wp-block-praxis-callout"><p><?php esc_html_e( 'Everything below is placeholder content. The logos, names and quotes are not real.', 'praxis' ); ?></p></div>
+	<!-- wp:praxis/callout {"type":"warning"} -->
+	<!-- wp:paragraph -->
+	<p><?php esc_html_e( 'Everything below is placeholder content. The logos, names and quotes are not real.', 'praxis' ); ?></p>
+	<!-- /wp:paragraph -->
 	<!-- /wp:praxis/callout -->
 </div>
 <!-- /wp:group -->

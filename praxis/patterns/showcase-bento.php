@@ -57,8 +57,10 @@ $praxis_code = implode(
 			<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Callouts for the things that matter', 'praxis' ); ?></h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:praxis/callout -->
-			<div class="wp-block-praxis-callout"><p><?php esc_html_e( 'Tip: every color here comes from the palette, so switching style variations recolors this card too.', 'praxis' ); ?></p></div>
+			<!-- wp:praxis/callout {"type":"tip"} -->
+			<!-- wp:paragraph -->
+			<p><?php esc_html_e( 'Every color here comes from the palette, so switching style variations recolors this card too.', 'praxis' ); ?></p>
+			<!-- /wp:paragraph -->
 			<!-- /wp:praxis/callout -->
 		</div>
 		<!-- /wp:group -->

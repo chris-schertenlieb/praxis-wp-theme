@@ -161,6 +161,12 @@
 			"transition": {
 				"duration": "0.2s",
 				"easing": "ease"
+			},
+			"callout": {
+				"note": "var(--wp--preset--color--primary)",
+				"tip": "#1d4ed8",
+				"warning": "#b45309",
+				"success": "#15803d"
 			}
 		}
 	},
@@ -239,6 +245,25 @@
 			}
 		},
 		"blocks": {
+			"core/accordion": {
+				"spacing": { "blockGap": "0" }
+			},
+			"core/accordion-heading": {
+				"typography": { "fontFamily": "var:preset|font-family|heading", "fontSize": "var:preset|font-size|large", "fontWeight": "600", "letterSpacing": "-0.01em" }
+			},
+			"core/accordion-item": {
+				"border": {
+					"bottom": { "color": "var:preset|color|line", "style": "solid", "width": "1px" }
+				},
+				"spacing": { "blockGap": "0" }
+			},
+			"core/accordion-panel": {
+				"color": { "text": "var:preset|color|muted" },
+				"spacing": {
+					"padding": { "bottom": "var:preset|spacing|30" },
+					"blockGap": "var:preset|spacing|20"
+				}
+			},
 			"core/button": {
 				"variations": {
 					"outline": {
@@ -267,6 +292,9 @@
 					"blockGap": "var:preset|spacing|20"
 				}
 			},
+			"core/icon": {
+				"color": { "text": "var:preset|color|primary" }
+			},
 			"core/image": {
 				"border": { "radius": "var:preset|border-radius|md" }
 			},
@@ -291,6 +319,10 @@
 						":hover": { "color": { "text": "var:preset|color|primary" } }
 					}
 				}
+			},
+			"core/post-time-to-read": {
+				"color": { "text": "var:preset|color|muted" },
+				"typography": { "fontSize": "var:preset|font-size|small" }
 			},
 			"core/pullquote": {
 				"elements": {
@@ -338,6 +370,18 @@
 				"border": { "color": "var:preset|color|line", "style": "solid", "width": "1px" },
 				"typography": { "fontSize": "var:preset|font-size|small" },
 				"css": "& th{background:var(--wp--preset--color--surface);text-align:start}"
+			},
+			"core/tab-list": {
+				"color": { "text": "var:preset|color|muted" },
+				"typography": { "fontSize": "var:preset|font-size|small", "fontWeight": "600" }
+			},
+			"core/tab-panel": {
+				"spacing": {
+					"padding": { "top": "var:preset|spacing|30" }
+				}
+			},
+			"praxis/table-of-contents": {
+				"typography": { "fontSize": "var:preset|font-size|small" }
 			}
 		}
 	},

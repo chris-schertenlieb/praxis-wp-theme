@@ -53,6 +53,11 @@ body.admin-bar .wp-site-blocks {
 	}
 }
 
+/* Keep in-page links (like the Table of Contents) from landing under it. */
+html:has(.wp-site-blocks > header > .is-style-praxis-sticky) {
+	scroll-padding-top: calc(var(--wp-admin--admin-bar--height, 0px) + 6rem);
+}
+
 .is-style-praxis-sticky {
 	position: relative;
 	isolation: isolate;

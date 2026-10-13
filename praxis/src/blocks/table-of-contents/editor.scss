@@ -1,0 +1,4 @@
+// Editor-only styles. Links in the editor preview don't navigate.
+.wp-block-praxis-table-of-contents__list a {
+	cursor: default;
+}

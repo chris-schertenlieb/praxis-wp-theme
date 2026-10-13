@@ -3,7 +3,7 @@
  * Title: Post meta
  * Slug: praxis/post-meta
  * Inserter: no
- * Description: Publish date and author, used by the post-meta template part.
+ * Description: Publish date, author and reading time, used by the post-meta template part.
  *
  * @package Praxis
  */
@@ -18,5 +18,11 @@
 	<!-- /wp:paragraph -->
 
 	<!-- wp:post-author-name {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|muted"},":hover":{"color":{"text":"var:preset|color|primary"}}}}}} /-->
+
+	<!-- wp:paragraph {"className":"praxis-meta-separator"} -->
+	<p class="praxis-meta-separator"><span aria-hidden="true">·</span></p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:post-time-to-read {"displayAsRange":false} /-->
 </div>
 <!-- /wp:group -->

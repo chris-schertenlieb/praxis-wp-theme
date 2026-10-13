@@ -14,6 +14,13 @@
 				{ "slug": "primary", "name": "Primary", "color": "#002929" },
 				{ "slug": "accent", "name": "Accent", "color": "#d9f99d" }
 			]
+		},
+		"custom": {
+			"callout": {
+				"tip": "#1e3a8a",
+				"warning": "#7c2d12",
+				"success": "#14532d"
+			}
 		}
 	},
 	"styles": {

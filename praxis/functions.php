@@ -15,6 +15,7 @@ define( 'PRAXIS_URI', get_template_directory_uri() );
 
 require_once PRAXIS_DIR . '/inc/setup.php';
 require_once PRAXIS_DIR . '/inc/blocks.php';
+require_once PRAXIS_DIR . '/inc/headings.php';
 require_once PRAXIS_DIR . '/inc/patterns.php';
 require_once PRAXIS_DIR . '/inc/starter-content.php';
 

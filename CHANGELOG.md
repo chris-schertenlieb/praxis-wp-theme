@@ -15,6 +15,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Block styles: Card (Group, Column) and Eyebrow (Paragraph) as JSON style variations in `styles/blocks/`, and Checklist for the List block.
 - `praxis-aurora` (animated glows behind a section) and `praxis-reveal` (fade in on scroll) CSS classes. Both are CSS only and respect reduced motion.
 - Details block styling: dividers between items and a plus/cross toggle.
+- Table of Contents block (`praxis/table-of-contents`): lists the post's headings, nested, from H2 down to a chosen level, with an optional title and numbered list. Dynamic, so it always matches the post.
+- Heading blocks in post content get an `id` generated from their text, unless they have an HTML anchor, so they can be linked to.
+- Styling for the core Accordion, Tabs and Icon blocks, to match the Details block and the palette.
+- Core Time to Read in the post meta, after the date and author.
+- In-page links scroll headings clear of the sticky header.
 - Bundled, CC0 illustrations, avatars and logo placeholders in `assets/images/`.
 - PHP coding standards tooling (`composer.json`, `phpcs.xml.dist`) using WordPress Coding Standards and PHPCompatibilityWP.
 - `CONTRIBUTING.md` and this changelog.
@@ -33,6 +38,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- Callout block: now holds any blocks instead of a single paragraph, and comes in Note, Tip, Warning and Success types, each with an icon, accent color and a label for screen readers. It's rendered on the server, adds border, typography and shadow settings, and callouts saved by 0.1 are migrated when opened in the editor (until then they still display correctly).
+- The FAQ pattern uses the core Accordion block instead of Details.
+- Requires WordPress 6.9 (for the core Accordion and Time to Read blocks); tested up to 7.1.
 - Single, page and "Page (No Title)" templates: post content is now full width with its own constrained layout, so wide and full-width blocks inside a post break out of the text column.
 - Single posts: category label above the title, date and author meta, wide 16:9 featured image, and comments with avatars. Comments fill whatever column they're in, so they line up in the Wide and With Sidebar templates.
 - Blog, archive and index templates show posts as a responsive card grid; archives get a header with the term description.
