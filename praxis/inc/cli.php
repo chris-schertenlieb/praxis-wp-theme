@@ -55,7 +55,7 @@ function praxis_cli_starter_content( $args, $assoc_args ) {
 	$starter = praxis_install_starter_content( $force );
 
 	foreach ( $starter['pages'] as $page_id ) {
-		WP_CLI::log( sprintf( '%-8s %s', get_the_title( $page_id ), get_permalink( $page_id ) ) );
+		WP_CLI::log( sprintf( '%-14s %s', get_the_title( $page_id ), get_permalink( $page_id ) ) );
 	}
 
 	WP_CLI::success( 'Starter content installed.' );
