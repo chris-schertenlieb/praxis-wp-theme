@@ -9,13 +9,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - Pattern library under "Praxis: …" inserter categories: Aurora, Centered and Text-and-image heroes; Features grid, Image and checklist, Block showcase (bento grid) and Style variations showcase; Logo wall, Stats and Testimonials; Pricing table; FAQ; Team; Contact details; Banner and Split calls to action; and Latest posts.
-- Page patterns (Landing, About, Services and pricing, Contact) offered when creating a new page, built from the section patterns.
-- Starter content now creates a Home page from the Landing page pattern and sets it as the static front page, builds About and Contact from their page patterns, and adds a Blog page as the posts page. It still only runs on empty sites.
+- Page patterns (Landing, About, Services and pricing, Contact, Pattern demo) offered when creating a new page, built from the section patterns.
+- Starter content now creates a Home page from the Landing page pattern and sets it as the static front page, builds About and Contact from their page patterns, and adds a Blog page as the posts page and a Pattern demo page that previews the Logo wall and Testimonials patterns with placeholder content. It still only runs on empty sites.
 - `wp praxis starter-content [--force]` WP-CLI command to install the starter content on demand, or reset the sample pages and menus.
 - Block styles: Card (Group, Column) and Eyebrow (Paragraph) as JSON style variations in `styles/blocks/`, and Checklist for the List block.
 - `praxis-aurora` (animated glows behind a section) and `praxis-reveal` (fade in on scroll) CSS classes. Both are CSS only and respect reduced motion.
 - Details block styling: dividers between items and a plus/cross toggle.
-- Bundled, CC0 illustrations, avatars and placeholder logos in `assets/images/`.
+- Bundled, CC0 illustrations, avatars and logo placeholders in `assets/images/`.
 - PHP coding standards tooling (`composer.json`, `phpcs.xml.dist`) using WordPress Coding Standards and PHPCompatibilityWP.
 - `CONTRIBUTING.md` and this changelog.
 - Committed `package-lock.json` and `composer.lock`.

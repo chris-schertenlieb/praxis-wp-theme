@@ -76,6 +76,7 @@ When the theme is activated on an empty site, `praxis/inc/starter-content.php` r
 
 - A **Home** page built from the Landing page pattern, set as the static front page
 - **About** and **Contact** pages built from their page patterns, and an empty **Blog** page set as the posts page
+- A **Pattern demo** page (linked in the footer menu) that previews the Logo wall and Testimonials patterns with placeholder content, so the real-looking pages don't show made-up logos or quotes
 - **Primary** and **Footer** Navigation menus, used by the header and footer
 - A sample site tagline, if the site still has the WordPress default
 
@@ -106,9 +107,9 @@ Praxis ships a pattern library under **Praxis: …** categories in the inserter 
 | Pricing, FAQ, Team, Contact | Pricing table, FAQ (core Details block), Team grid, Contact details |
 | Calls to action | Banner, Split |
 | Posts | Latest posts |
-| Pages | Landing, About, Services and pricing, Contact |
+| Pages | Landing, About, Services and pricing, Contact, Pattern demo |
 
-Page patterns appear in the **Choose a pattern** dialog when you add a new page. They're built from the section patterns, so every section can also be inserted on its own. Use them with the **Page (No Title)** template so the page opens with its hero. Images are bundled in `praxis/assets/images/`; the people and companies in them are fictional placeholders.
+Page patterns appear in the **Choose a pattern** dialog when you add a new page. They're built from the section patterns, so every section can also be inserted on its own. Use them with the **Page (No Title)** template so the page opens with its hero. Images are bundled in `praxis/assets/images/`. The Logo wall and Testimonials patterns ship with obvious placeholders ("LOGO" boxes, "Customer name"); the Team pattern's people are fictional.
 
 ### Styles used by the patterns
 

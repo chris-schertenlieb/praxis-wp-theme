@@ -3,7 +3,7 @@
  * Sample content installed on theme activation.
  *
  * When Praxis (or a child theme) is activated on an empty site, this creates
- * Home, About, Blog and Contact pages, Primary and Footer Navigation menus
+ * Home, About, Blog, Contact and Pattern demo pages, Primary and Footer Navigation menus
  * (wp_navigation posts) that the header and footer patterns point at, and
  * makes Home, built from the Landing page pattern, the static front page.
  * Everything created is ordinary, Site-Editor-editable content flagged with
@@ -61,6 +61,10 @@ function praxis_starter_pages() {
 		'contact' => array(
 			'title'   => __( 'Contact', 'praxis' ),
 			'pattern' => 'praxis/page-contact',
+		),
+		'demo'    => array(
+			'title'   => __( 'Pattern demo', 'praxis' ),
+			'pattern' => 'praxis/page-demo',
 		),
 	);
 }
@@ -123,7 +127,7 @@ function praxis_install_starter_content( $reset = false ) {
 	$menus = array(
 		'footer'  => array(
 			'title' => __( 'Footer', 'praxis' ),
-			'links' => array( 'about', 'blog', 'contact' ),
+			'links' => array( 'about', 'blog', 'contact', 'demo' ),
 		),
 		'primary' => array(
 			'title' => __( 'Primary', 'praxis' ),
@@ -317,7 +321,7 @@ function praxis_get_sample_navigation_id( $location ) {
 /**
  * Returns the URL of a sample page, if it still exists.
  *
- * @param string $key 'home', 'about', 'blog' or 'contact'.
+ * @param string $key 'home', 'about', 'blog', 'contact' or 'demo'.
  * @return string Page URL, or an empty string.
  */
 function praxis_get_sample_page_url( $key ) {

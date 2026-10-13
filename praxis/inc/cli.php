@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Installs the Praxis starter content.
  *
- * Creates Home, About, Blog and Contact pages from the theme's page
+ * Creates Home, About, Blog, Contact and Pattern demo pages from the theme's page
  * patterns, the Primary and Footer menus, and makes Home (the landing page)
  * the static front page. Without --force this does exactly what activating
  * the theme does: nothing, unless the site is empty and it hasn't run before.

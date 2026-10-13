@@ -7,7 +7,7 @@
  * Block Types: core/post-content
  * Post Types: page
  * Viewport Width: 1400
- * Description: An about page with an intro, a story section with an image, stats, the team, testimonials and a call to action.
+ * Description: An about page with an intro, a story section with an image, stats, the team and a call to action.
  *
  * Use it with the "Page (No Title)" template.
  *
@@ -36,7 +36,5 @@
 <!-- wp:pattern {"slug":"praxis/stats"} /-->
 
 <!-- wp:pattern {"slug":"praxis/team"} /-->
-
-<!-- wp:pattern {"slug":"praxis/testimonials"} /-->
 
 <!-- wp:pattern {"slug":"praxis/cta-banner"} /-->
