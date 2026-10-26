@@ -1,7 +1,7 @@
 /*
  * Tabs block: a rule under the tab list, with the selected tab underlined
- * in the primary color on top of it. Tab colors, fonts and the panel's
- * spacing are in theme.json.
+ * on top of it (in the block accent when accents are on, inc/accents.php).
+ * Tab colors, fonts and the panel's spacing are in theme.json.
  */
 .wp-block-tabs .wp-block-tab-list {
 	border-bottom: 1px solid var(--wp--preset--color--line);
@@ -18,6 +18,10 @@
 
 .wp-block-tabs .wp-block-tab-list button[aria-selected="true"] {
 	color: var(--wp--preset--color--primary);
+}
+
+.wp-block-tabs .wp-block-tab-list button[aria-selected="true"]::before {
+	border-bottom-color: var(--praxis-accent, currentcolor);
 }
 
 .wp-block-tabs .wp-block-tab-list button:focus-visible {

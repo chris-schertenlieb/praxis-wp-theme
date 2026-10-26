@@ -76,7 +76,7 @@ html:has(.wp-site-blocks > header > .is-style-praxis-sticky) {
 
 /* Header navigation: animated underline on hover and keyboard focus. */
 header.wp-block-template-part .wp-block-navigation-item__content {
-	background: linear-gradient(currentcolor, currentcolor) 0 100% / 0 1px no-repeat;
+	background: linear-gradient(var(--praxis-accent, currentcolor), var(--praxis-accent, currentcolor)) 0 100% / 0 1px no-repeat;
 	transition: background-size var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
 }
 

@@ -1,0 +1,54 @@
+/*
+ * Block accents (inc/accents.php). Loaded on the front end and in the editor
+ * only while accents are on (Appearance → Praxis), after :root has set
+ * --praxis-accent to the site's default accent color. Blocks that pick
+ * their own accent set the variable inline, and everything inside them
+ * inherits it.
+ *
+ * The theme's other styles already read --praxis-accent with a fallback
+ * (quote and pullquote rules, separators, Details and Accordion toggles,
+ * Checklist marks, the selected tab, Table of Contents, header navigation,
+ * Icon and the Note callout). This file adds the touches that only exist
+ * with accents on. Text colors are never changed.
+ *
+ * Selectors start with :root so they win over theme.json block styles,
+ * which use zero-specificity :where().
+ */
+
+/* On dark Inverse sections, blend the palette's Accent with the band's
+ * text color so marks stay visible whatever the variation. A block inside
+ * that picks its own accent still wins. */
+.is-style-section-inverse {
+	--praxis-accent: color-mix(in srgb, var(--wp--preset--color--accent) 70%, currentcolor);
+}
+
+/* List bullets and numbers. Checklist items draw their own mark. */
+:root .wp-block-list:not(.is-style-praxis-checklist) > li::marker {
+	color: var(--praxis-accent);
+}
+
+/* A heavier rule above pullquotes, in the accent color. */
+:root .wp-block-pullquote {
+	border-top-width: 2px;
+}
+
+/* The rule under a table's header row. */
+:root .wp-block-table thead {
+	border-bottom-color: var(--praxis-accent);
+}
+
+/* An accent edge on code, preformatted text and verse. */
+:root :is(.wp-block-code, .wp-block-preformatted, .wp-block-verse) {
+	border-inline-start: 3px solid var(--praxis-accent);
+}
+
+:root :is(.wp-block-preformatted, .wp-block-verse) {
+	padding-inline-start: var(--wp--preset--spacing--30);
+}
+
+/* Underlines on links in running text. */
+:root :where(p, li, td, dd, figcaption) a:where(:not(.wp-element-button, .wp-block-navigation-item__content)) {
+	text-decoration-color: var(--praxis-accent);
+	text-decoration-thickness: 0.1em;
+	text-underline-offset: 0.2em;
+}

@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- **Appearance → Praxis** settings page (admins only), built with `@wordpress/components` and saved through the REST API (`praxis_settings` option).
+- Block accents: core blocks take a palette color on their details (quote and pullquote rules, separators, list markers, Checklist marks, table header rules, Details and Accordion toggles, the selected tab, code/preformatted/verse edges, link underlines, Icon, the Note callout and the Table of Contents rule). On by default with Primary; switch it off or change the default color on the settings page. Each supported block can choose its own palette color under Styles → Accent color, and Groups and Columns pass theirs to the blocks inside. Text colors never change. Filters: `praxis_block_accents`, `praxis_accent_blocks`.
 - Pattern library under "Praxis: …" inserter categories: Aurora, Centered and Text-and-image heroes; Features grid, Image and checklist, Block showcase (bento grid) and Style variations showcase; Logo wall, Stats and Testimonials; Pricing table; FAQ; Team; Contact details; Banner and Split calls to action; and Latest posts.
 - Page patterns (Landing, About, Services and pricing, Contact, Pattern demo) offered when creating a new page, built from the section patterns.
 - Starter content now creates a Home page from the Landing page pattern and sets it as the static front page, builds About and Contact from their page patterns, and adds a Blog page as the posts page and a Pattern demo page that previews the Logo wall and Testimonials patterns with placeholder content. It still only runs on empty sites.
@@ -38,6 +40,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- With block accents on (the default), quote bars, separators, the pullquote top rule and other block details use the accent color (Primary) instead of their previous fixed colors. Turning accents off on Appearance → Praxis restores the previous look.
 - Callout block: now holds any blocks instead of a single paragraph, and comes in Note, Tip, Warning and Success types, each with an icon, accent color and a label for screen readers. It's rendered on the server, adds border, typography and shadow settings, and callouts saved by 0.1 are migrated when opened in the editor (until then they still display correctly).
 - The FAQ pattern uses the core Accordion block instead of Details.
 - Requires WordPress 6.9 (for the core Accordion and Time to Read blocks); tested up to 7.1.

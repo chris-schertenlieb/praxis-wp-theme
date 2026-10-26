@@ -21,6 +21,7 @@ praxis-child/   Starter child theme for site-specific customisation
 npm install          # installs root + praxis workspace deps
 npm run build        # builds custom blocks into praxis/build/
 npm run start        # watch mode while developing blocks
+npm run start:js --workspace=praxis  # watch the settings page and editor scripts
 npm run lint         # lint block JS + SCSS
 composer lint        # lint PHP (after `composer install`)
 ```
@@ -120,6 +121,25 @@ Page patterns appear in the **Choose a pattern** dialog when you add a new page.
   - `praxis-reveal` on a section: its contents fade and rise in as they scroll into view. This is pure CSS and only runs in browsers that support scroll-driven animations.
 
   Both stop moving for visitors who prefer reduced motion.
+
+## Theme settings & block accents
+
+**Appearance → Praxis** (administrators only) holds the theme behaviour that has no home in the Site Editor. Design stays in **Styles**.
+
+### Block accents
+
+With **Add accent colors to core blocks** on (the default), core blocks pick up a palette color in their details:
+
+- quote and pullquote rules, separators, list bullets and numbers, Checklist marks
+- table header rules, Details and Accordion toggles, the selected tab
+- an edge on Code, Preformatted and Verse blocks, and link underlines in running text
+- Icon blocks, the Note callout and the Table of Contents rule
+
+Text colors never change, so readability doesn't depend on the accent. The **Default accent color** on the settings page picks the color (Primary to start). Every supported block also gets an **Accent color** setting in the editor (block settings → Styles) to choose its own palette color. Set it on a Group, Columns or Column and every block inside inherits it. On dark Inverse sections the accent switches to a lighter blend of the palette's Accent color, so it stays visible.
+
+Turn accents off and blocks go back to the theme's plain styling; per-block choices are kept but ignored until you turn accents back on. Block choices are stored only in the block's settings, never in its HTML, so content stays valid if you switch themes.
+
+For developers: everything reads the `--praxis-accent` CSS custom property (`praxis/inc/accents.php`, `praxis/assets/css/accents.css`). Filters: `praxis_block_accents` (bool, on/off) and `praxis_accent_blocks` (the block names that get the setting).
 
 ## Custom blocks
 

@@ -1,8 +1,9 @@
 // Front-end and editor styles.
 // Each type sets an accent color (settings.custom.callout in theme.json, so
-// style variations can retune them) and an icon, drawn as a CSS mask so it
-// takes the accent color. The defaults sit in :where() so the block's own
-// color, border and spacing settings always win.
+// style variations can retune them; Note also follows block accents) and
+// an icon, drawn as a CSS mask so it takes the accent color. The defaults
+// sit in :where() so the block's own color, border and spacing settings
+// always win.
 
 $praxis-callout-icons: (
 	note: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill-rule='evenodd' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 8h2v7h-2v-7Zm0-3h2v2h-2V7Z'/></svg>",
@@ -12,7 +13,7 @@ $praxis-callout-icons: (
 );
 
 .wp-block-praxis-callout {
-	--praxis-callout-color: var(--wp--custom--callout--note);
+	--praxis-callout-color: var(--praxis-accent, var(--wp--custom--callout--note));
 
 	display: grid;
 	grid-template-columns: auto minmax(0, 1fr);
@@ -25,6 +26,17 @@ $praxis-callout-icons: (
 			--praxis-callout-color: var(--wp--custom--callout--#{$type});
 			--praxis-callout-icon: url("data:image/svg+xml,#{$svg}");
 		}
+	}
+
+	// Block accents (inc/accents.php): Note follows the site's accent color.
+	// The other types keep their meaning colors unless the callout picks its
+	// own accent in the editor.
+	&.is-type-note {
+		--praxis-callout-color: var(--praxis-accent, var(--wp--custom--callout--note));
+	}
+
+	&.has-praxis-accent {
+		--praxis-callout-color: var(--praxis-accent);
 	}
 
 	&::before {

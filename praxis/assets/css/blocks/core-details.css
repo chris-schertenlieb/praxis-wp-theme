@@ -26,7 +26,7 @@
 	font-size: 1.5em;
 	font-weight: 300;
 	line-height: 1;
-	color: var(--wp--preset--color--primary);
+	color: var(--praxis-accent, var(--wp--preset--color--primary));
 	transition: transform var(--wp--custom--transition--duration) var(--wp--custom--transition--easing);
 }
 

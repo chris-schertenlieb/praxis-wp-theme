@@ -126,7 +126,7 @@
 		},
 		"blocks": {
 			"core/pullquote": { "typography": { "fontStyle": "italic", "fontWeight": "400", "letterSpacing": "0" } },
-			"core/quote": { "border": { "left": { "color": "var:preset|color|primary" } } }
+			"core/quote": { "border": { "left": { "color": "var(--praxis-accent, var(--wp--preset--color--primary))" } } }
 		},
 		"variations": {
 			"section-inverse": {
