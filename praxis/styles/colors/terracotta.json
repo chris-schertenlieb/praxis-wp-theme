@@ -12,7 +12,7 @@
 				{ "slug": "muted", "name": "Muted", "color": "#675d53" },
 				{ "slug": "contrast", "name": "Contrast", "color": "#211c17" },
 				{ "slug": "primary", "name": "Primary", "color": "#a8401b" },
-				{ "slug": "accent", "name": "Accent", "color": "#2f5d50" }
+				{ "slug": "accent", "name": "Accent", "color": "#9fd3bd" }
 			]
 		}
 	}

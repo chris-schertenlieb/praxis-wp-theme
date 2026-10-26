@@ -16,6 +16,7 @@
 			]
 		},
 		"custom": {
+			"quote": { "rule": "var(--wp--preset--color--contrast)" },
 			"callout": {
 				"tip": "#1e3a8a",
 				"warning": "#7c2d12",
@@ -41,9 +42,6 @@
 			}
 		},
 		"blocks": {
-			"core/quote": {
-				"border": { "left": { "color": "var:preset|color|contrast" } }
-			},
 			"core/separator": {
 				"color": { "text": "var:preset|color|contrast" }
 			}

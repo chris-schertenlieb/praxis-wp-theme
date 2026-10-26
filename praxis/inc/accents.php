@@ -143,6 +143,7 @@ function praxis_enqueue_accents() {
 	}
 
 	wp_enqueue_style( 'praxis-accents', PRAXIS_URI . '/assets/css/accents.css', array(), PRAXIS_VERSION );
+	wp_style_add_data( 'praxis-accents', 'path', PRAXIS_DIR . '/assets/css/accents.css' );
 	wp_add_inline_style(
 		'praxis-accents',
 		sprintf( ':root{--praxis-accent:%s;}', praxis_accent_value( praxis_get_setting( 'accentColor' ) ) )

@@ -156,6 +156,12 @@ Core blocks cover the rest. Accordion, Tabs, Icon and Time to Read (shown in the
 
 Blocks live in `praxis/src/blocks/<block-name>/` and are auto-registered from the compiled `praxis/build/blocks/` directory via a block manifest. Dynamic blocks render with a `render.php` next to their `block.json`. To add a block, create a new folder alongside `callout/` with a `block.json` and rebuild.
 
+## Accessibility, performance & translations
+
+- **Accessibility:** aims for WCAG 2.2 AA in every style variation and color preset: text and focus rings meet contrast on light and Inverse sections, every interactive element has a visible keyboard focus ring, form fields follow the palette, and motion stops when visitors ask for reduced motion. Core adds the "Skip to content" link, which jumps to each template's `main`.
+- **Performance:** CSS loads per block, and the theme's own small stylesheets are printed inline instead of as render-blocking files (core's `styles_inline_size_limit` decides how much). The regular latin face of the active body and heading fonts is preloaded. Change that list with the `praxis_preload_fonts` filter (an array of font URLs; return an empty array to turn preloading off).
+- **Translations:** strings use the `praxis` text domain, and `praxis/languages/praxis.pot` is the template. Translations in `praxis/languages/` are used for PHP, `theme.json`, patterns and the block editor scripts. Right-to-left languages are supported.
+
 ## Releasing
 
 `praxis/build/` is git-ignored, so run `npm run build` before zipping the theme for distribution.

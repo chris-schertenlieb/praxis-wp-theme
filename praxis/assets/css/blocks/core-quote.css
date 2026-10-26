@@ -1,0 +1,10 @@
+/*
+ * Quote: a rule along the start edge, which is the right edge in RTL
+ * languages. theme.json can only put borders on a physical side, so the rule
+ * lives here. Its color is the block accent when one is set, otherwise
+ * settings.custom.quote.rule (style variations change it there).
+ */
+.wp-block-quote {
+	border-inline-start: 4px solid var(--praxis-accent, var(--wp--custom--quote--rule));
+	padding-inline-start: var(--wp--preset--spacing--40);
+}

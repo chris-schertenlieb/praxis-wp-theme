@@ -1,0 +1,1873 @@
+# Copyright (C) 2026 Chris Schertenlieb
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Praxis 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/chris-schertenlieb/praxis-wp-theme/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-26T03:19:53+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: praxis\n"
+
+#. Theme Name of the theme
+#: style.css:2
+#: inc/blocks.php:75
+#: inc/settings.php:110
+#: inc/settings.php:111
+#: inc/settings.php:126
+msgid "Praxis"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css:3
+msgid "https://github.com/chris-schertenlieb/praxis-wp-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css:5
+msgid "An open source block theme built on Gutenberg with custom blocks."
+msgstr ""
+
+#. Author of the theme
+#: style.css:4
+msgid "Chris Schertenlieb"
+msgstr ""
+
+#: build/blocks/callout/render.php:20
+#: build/blocks/callout/index.js:1
+msgid "Note"
+msgstr ""
+
+#: build/blocks/callout/render.php:21
+#: build/blocks/callout/index.js:1
+msgid "Tip"
+msgstr ""
+
+#: build/blocks/callout/render.php:22
+#: build/blocks/callout/index.js:1
+msgid "Warning"
+msgstr ""
+
+#: build/blocks/callout/render.php:23
+#: build/blocks/callout/index.js:1
+msgid "Success"
+msgstr ""
+
+#. translators: %s: Callout type, such as "Note" or "Warning".
+#: build/blocks/callout/render.php:45
+#, php-format
+msgid "%s:"
+msgstr ""
+
+#: build/blocks/table-of-contents/render.php:40
+#: build/blocks/table-of-contents/index.js:3
+msgid "On this page"
+msgstr ""
+
+#: inc/blocks.php:42
+msgid "Sticky header"
+msgstr ""
+
+#: inc/blocks.php:50
+msgid "Pills"
+msgstr ""
+
+#: inc/blocks.php:58
+msgid "Checklist"
+msgstr ""
+
+#: inc/blocks.php:93
+msgid "Praxis: custom blocks have not been built. Run `npm install && npm run build` in the theme directory."
+msgstr ""
+
+#: inc/patterns.php:23
+msgid "Praxis: Heroes"
+msgstr ""
+
+#: inc/patterns.php:23
+msgid "Large opening sections with a headline and call to action."
+msgstr ""
+
+#: inc/patterns.php:24
+msgid "Praxis: Features"
+msgstr ""
+
+#: inc/patterns.php:24
+msgid "Feature grids, media and text, and block showcases."
+msgstr ""
+
+#: inc/patterns.php:25
+msgid "Praxis: Social proof"
+msgstr ""
+
+#: inc/patterns.php:25
+msgid "Testimonials, logos and stats."
+msgstr ""
+
+#: inc/patterns.php:26
+msgid "Praxis: Pricing"
+msgstr ""
+
+#: inc/patterns.php:26
+msgid "Pricing tables and plans."
+msgstr ""
+
+#: inc/patterns.php:27
+msgid "Praxis: FAQ"
+msgstr ""
+
+#: inc/patterns.php:27
+msgid "Frequently asked questions built with the Details block."
+msgstr ""
+
+#: inc/patterns.php:28
+msgid "Praxis: Team"
+msgstr ""
+
+#: inc/patterns.php:28
+msgid "Team members and bios."
+msgstr ""
+
+#: inc/patterns.php:29
+msgid "Praxis: Contact"
+msgstr ""
+
+#: inc/patterns.php:29
+msgid "Contact details and ways to get in touch."
+msgstr ""
+
+#: inc/patterns.php:30
+msgid "Praxis: Calls to action"
+msgstr ""
+
+#: inc/patterns.php:30
+msgid "Sections that ask the reader to take the next step."
+msgstr ""
+
+#: inc/patterns.php:31
+msgid "Praxis: Posts"
+msgstr ""
+
+#: inc/patterns.php:31
+msgid "Recent posts from the blog."
+msgstr ""
+
+#: inc/patterns.php:32
+msgid "Praxis: Pages"
+msgstr ""
+
+#: inc/patterns.php:32
+msgid "Full page layouts to start a new page from."
+msgstr ""
+
+#: inc/patterns.php:140
+msgid "Default"
+msgstr ""
+
+#. translators: 1: Current year, 2: Site name.
+#: inc/patterns.php:190
+#, php-format
+msgid "© %1$s %2$s. Built with Praxis."
+msgstr ""
+
+#: inc/settings.php:53
+msgid "Praxis theme settings."
+msgstr ""
+
+#: inc/starter-content.php:50
+#: inc/starter-content.php:142
+msgid "Home"
+msgstr ""
+
+#: inc/starter-content.php:54
+msgid "About"
+msgstr ""
+
+#: inc/starter-content.php:58
+msgid "Blog"
+msgstr ""
+
+#: inc/starter-content.php:62
+#: patterns/contact.php:32
+msgid "Contact"
+msgstr ""
+
+#: inc/starter-content.php:66
+#: patterns/page-demo.php:26
+msgid "Pattern demo"
+msgstr ""
+
+#: inc/starter-content.php:129
+msgid "Footer"
+msgstr ""
+
+#: inc/starter-content.php:133
+#: patterns/showcase-bento.php:81
+msgid "Primary"
+msgstr ""
+
+#: inc/starter-content.php:171
+msgid "A site built with the Praxis block theme"
+msgstr ""
+
+#: patterns/404.php:3
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:6
+msgctxt "Pattern description"
+msgid "Content for the 404 template."
+msgstr ""
+
+#: patterns/404.php:15
+msgid "Error 404"
+msgstr ""
+
+#: patterns/404.php:19
+msgid "Page not found"
+msgstr ""
+
+#: patterns/404.php:23
+msgid "The page you were looking for has moved or no longer exists. Try a search, or head back home."
+msgstr ""
+
+#: patterns/404.php:26
+#: patterns/sidebar.php:14
+msgid "Search"
+msgstr ""
+
+#: patterns/404.php:26
+msgid "Search this site…"
+msgstr ""
+
+#: patterns/404.php:31
+msgid "Back to home"
+msgstr ""
+
+#: patterns/blog-heading.php:3
+msgctxt "Pattern title"
+msgid "Blog heading"
+msgstr ""
+
+#: patterns/blog-heading.php:6
+msgctxt "Pattern description"
+msgid "Heading for the blog index, used by the home template."
+msgstr ""
+
+#: patterns/blog-heading.php:13
+msgid "Latest posts"
+msgstr ""
+
+#: patterns/comments.php:3
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr ""
+
+#: patterns/comments.php:6
+msgctxt "Pattern description"
+msgid "Comment list and form, used by the comments template part."
+msgstr ""
+
+#: patterns/contact.php:3
+msgctxt "Pattern title"
+msgid "Contact details"
+msgstr ""
+
+#: patterns/contact.php:8
+msgctxt "Pattern description"
+msgid "A heading and intro with email, phone and office details, beside a card with buttons to email or book a call."
+msgstr ""
+
+#: patterns/contact.php:19
+msgid "Email"
+msgstr ""
+
+#: patterns/contact.php:20
+msgid "Phone"
+msgstr ""
+
+#: patterns/contact.php:20
+msgid "+1 (555) 010-0100"
+msgstr ""
+
+#: patterns/contact.php:21
+msgid "Office"
+msgstr ""
+
+#: patterns/contact.php:21
+msgid "123 Example Street, Suite 4, Springfield"
+msgstr ""
+
+#: patterns/contact.php:22
+msgid "Hours"
+msgstr ""
+
+#: patterns/contact.php:22
+msgid "Monday to Friday, 9am–5pm"
+msgstr ""
+
+#: patterns/contact.php:36
+msgid "Talk to a real person"
+msgstr ""
+
+#: patterns/contact.php:40
+msgid "Questions about a project, a plan or the theme itself? We usually reply within one working day."
+msgstr ""
+
+#: patterns/contact.php:68
+msgid "Prefer to talk it through?"
+msgstr ""
+
+#: patterns/contact.php:72
+msgid "Book a free 20-minute call. Tell us what you are working on and we will tell you honestly whether we can help."
+msgstr ""
+
+#: patterns/contact.php:78
+msgid "Book a call"
+msgstr ""
+
+#: patterns/contact.php:82
+msgid "Email us"
+msgstr ""
+
+#: patterns/cta-banner.php:3
+msgctxt "Pattern title"
+msgid "Call to action: banner"
+msgstr ""
+
+#: patterns/cta-banner.php:8
+msgctxt "Pattern description"
+msgid "A rounded, dark banner with drifting color glows, a large headline, a short line of text and two buttons."
+msgstr ""
+
+#: patterns/cta-banner.php:19
+msgid "Ready when you are."
+msgstr ""
+
+#: patterns/cta-banner.php:23
+msgid "Start with a pattern, make it yours, and publish today."
+msgstr ""
+
+#: patterns/cta-banner.php:29
+#: patterns/footer.php:44
+#: patterns/header.php:53
+#: patterns/hero-aurora.php:45
+#: patterns/page-contact.php:21
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/cta-banner.php:33
+#: patterns/features-media.php:59
+#: patterns/hero.php:35
+msgid "Learn more"
+msgstr ""
+
+#: patterns/cta-split.php:3
+msgctxt "Pattern title"
+msgid "Call to action: split"
+msgstr ""
+
+#: patterns/cta-split.php:8
+msgctxt "Pattern description"
+msgid "A soft-colored panel with a headline and text on one side and buttons on the other."
+msgstr ""
+
+#: patterns/cta-split.php:21
+msgid "Let’s make something together"
+msgstr ""
+
+#: patterns/cta-split.php:25
+msgid "Tell us about your project and we’ll get back to you within one working day."
+msgstr ""
+
+#: patterns/cta-split.php:33
+msgid "Start a project"
+msgstr ""
+
+#: patterns/cta-split.php:37
+#: patterns/page-about.php:21
+msgid "About us"
+msgstr ""
+
+#: patterns/faq.php:3
+msgctxt "Pattern title"
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php:8
+msgctxt "Pattern description"
+msgid "A heading and short intro beside a list of questions that open to show their answers, built with the core Accordion block."
+msgstr ""
+
+#: patterns/faq.php:14
+msgid "Do I need to know how to code?"
+msgstr ""
+
+#: patterns/faq.php:14
+msgid "No. Pages, templates, headers, footers, colors and fonts are all edited visually in the Site Editor. Code is there if you want it, never required."
+msgstr ""
+
+#: patterns/faq.php:15
+msgid "Will it work with my plugins?"
+msgstr ""
+
+#: patterns/faq.php:15
+msgid "Praxis uses standard WordPress blocks and templates, so plugins that support block themes work as expected, including forms, SEO and e-commerce."
+msgstr ""
+
+#: patterns/faq.php:16
+msgid "Can I change the colors and fonts?"
+msgstr ""
+
+#: patterns/faq.php:16
+msgid "Yes. Pick one of the style variations or set your own colors and fonts in Appearance → Editor → Styles. Every page updates at once."
+msgstr ""
+
+#: patterns/faq.php:17
+msgid "Is it accessible?"
+msgstr ""
+
+#: patterns/faq.php:17
+msgid "The default palette is checked for WCAG AA contrast, focus styles are always visible, and animations switch off for people who prefer reduced motion."
+msgstr ""
+
+#: patterns/faq.php:18
+msgid "How do I customise it safely?"
+msgstr ""
+
+#: patterns/faq.php:18
+msgid "Use the included Praxis Child theme for code changes, so updates to Praxis never overwrite your work. Changes made in the Site Editor are kept automatically."
+msgstr ""
+
+#. translators: %s: Link to the contact page.
+#: patterns/faq.php:23
+#, php-format
+msgid "Can’t find what you’re looking for? %s and we’ll get back to you."
+msgstr ""
+
+#: patterns/faq.php:24
+msgid "Send us a message"
+msgstr ""
+
+#: patterns/faq.php:34
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php:38
+msgid "Questions, answered"
+msgstr ""
+
+#: patterns/features-grid.php:3
+msgctxt "Pattern title"
+msgid "Features grid"
+msgstr ""
+
+#: patterns/features-grid.php:8
+msgctxt "Pattern description"
+msgid "A centered intro above a responsive grid of six numbered feature cards."
+msgstr ""
+
+#: patterns/features-grid.php:14
+msgid "Full Site Editing"
+msgstr ""
+
+#: patterns/features-grid.php:14
+msgid "Templates, headers and footers are blocks too. Change any part of the site visually, without touching code."
+msgstr ""
+
+#: patterns/features-grid.php:15
+msgid "One design system"
+msgstr ""
+
+#: patterns/features-grid.php:15
+msgid "Colors, fonts, spacing and shadows live in theme.json, so a change in Styles updates every page at once."
+msgstr ""
+
+#: patterns/features-grid.php:16
+msgid "Ready-made patterns"
+msgstr ""
+
+#: patterns/features-grid.php:16
+msgid "Heroes, pricing, testimonials, FAQs and full pages. Insert one, swap the words, and you are done."
+msgstr ""
+
+#: patterns/features-grid.php:17
+#: patterns/style-variations.php:24
+msgid "Style variations"
+msgstr ""
+
+#: patterns/features-grid.php:17
+msgid "Dark, warm and high-contrast looks, plus color and font presets, one click away in the Site Editor."
+msgstr ""
+
+#: patterns/features-grid.php:18
+msgid "Accessible by default"
+msgstr ""
+
+#: patterns/features-grid.php:18
+msgid "Contrast-checked colors, visible focus styles, semantic markup and respect for reduced motion."
+msgstr ""
+
+#: patterns/features-grid.php:19
+msgid "Fast and lightweight"
+msgstr ""
+
+#: patterns/features-grid.php:19
+msgid "Self-hosted fonts, per-block CSS and no jQuery. Pages load only what they actually use."
+msgstr ""
+
+#: patterns/features-grid.php:27
+msgid "Features"
+msgstr ""
+
+#: patterns/features-grid.php:31
+msgid "Everything you need, nothing you don’t"
+msgstr ""
+
+#: patterns/features-grid.php:35
+msgid "A modern block theme that stays out of your way and lets the content lead."
+msgstr ""
+
+#: patterns/features-media.php:3
+msgctxt "Pattern title"
+msgid "Features: image and checklist"
+msgstr ""
+
+#: patterns/features-media.php:8
+msgctxt "Pattern description"
+msgid "An image beside a heading, a paragraph, a checklist of benefits and a button."
+msgstr ""
+
+#: patterns/features-media.php:21
+msgid "Four style variation previews in different colors and fonts."
+msgstr ""
+
+#: patterns/features-media.php:29
+msgid "Make it yours"
+msgstr ""
+
+#: patterns/features-media.php:33
+msgid "Restyle the whole site in minutes"
+msgstr ""
+
+#: patterns/features-media.php:37
+msgid "Pick a style variation, tweak a color or swap a font in Appearance → Editor → Styles. Every template and pattern follows along."
+msgstr ""
+
+#: patterns/features-media.php:43
+msgid "Eight named colors that every block understands"
+msgstr ""
+
+#: patterns/features-media.php:47
+msgid "Fluid type that scales smoothly from phone to desktop"
+msgstr ""
+
+#: patterns/features-media.php:51
+msgid "Section styles that recolor whole bands of a page"
+msgstr ""
+
+#: patterns/footer-columns.php:3
+msgctxt "Pattern title"
+msgid "Columns footer"
+msgstr ""
+
+#: patterns/footer-columns.php:7
+msgctxt "Pattern description"
+msgid "Light footer with the site title, tagline and social links, plus columns for pages, topics and recent posts."
+msgstr ""
+
+#: patterns/footer-columns.php:51
+#: patterns/footer.php:64
+msgid "Pages"
+msgstr ""
+
+#: patterns/footer-columns.php:60
+#: patterns/sidebar.php:28
+msgid "Topics"
+msgstr ""
+
+#: patterns/footer-columns.php:69
+#: patterns/sidebar.php:19
+msgid "Recent posts"
+msgstr ""
+
+#: patterns/footer-columns.php:84
+#: patterns/footer.php:94
+msgid "Back to top ↑"
+msgstr ""
+
+#: patterns/footer-minimal.php:3
+msgctxt "Pattern title"
+msgid "Minimal footer"
+msgstr ""
+
+#: patterns/footer-minimal.php:7
+msgctxt "Pattern description"
+msgid "A single quiet row with the site title, footer navigation and copyright."
+msgstr ""
+
+#: patterns/footer.php:3
+msgctxt "Pattern title"
+msgid "Dark footer"
+msgstr ""
+
+#: patterns/footer.php:7
+msgctxt "Pattern description"
+msgid "Dark footer with a call-to-action headline, site title and tagline, footer navigation, social links, copyright and a back-to-top link."
+msgstr ""
+
+#: patterns/footer.php:37
+msgid "Let’s build something great."
+msgstr ""
+
+#: patterns/footer.php:73
+msgid "Follow"
+msgstr ""
+
+#: patterns/header-centered.php:3
+msgctxt "Pattern title"
+msgid "Centered header"
+msgstr ""
+
+#: patterns/header-centered.php:7
+msgctxt "Pattern description"
+msgid "Sticky header with the logo and site title centered above the primary navigation."
+msgstr ""
+
+#: patterns/header-minimal.php:3
+msgctxt "Pattern title"
+msgid "Minimal header"
+msgstr ""
+
+#: patterns/header-minimal.php:7
+msgctxt "Pattern description"
+msgid "Sticky header with just the site title and a menu button that opens the full-screen navigation on every screen size."
+msgstr ""
+
+#: patterns/header.php:3
+msgctxt "Pattern title"
+msgid "Classic header"
+msgstr ""
+
+#: patterns/header.php:7
+msgctxt "Pattern description"
+msgid "Sticky, translucent header with the site logo and title, centered primary navigation and a pill call to action."
+msgstr ""
+
+#: patterns/hero-aurora.php:3
+msgctxt "Pattern title"
+msgid "Hero: aurora"
+msgstr ""
+
+#: patterns/hero-aurora.php:8
+msgctxt "Pattern description"
+msgid "A dark, full-width hero with slowly drifting color glows, a display headline, two buttons and a product illustration."
+msgstr ""
+
+#: patterns/hero-aurora.php:25
+msgid "✦ Free, open source and built for the Site Editor"
+msgstr ""
+
+#: patterns/hero-aurora.php:31
+msgid "Build beautiful sites, block by block."
+msgstr ""
+
+#: patterns/hero-aurora.php:35
+msgid "Praxis gives you polished templates, dozens of patterns and a design system you control from Styles. No page builder, no lock-in, just WordPress."
+msgstr ""
+
+#: patterns/hero-aurora.php:41
+msgid "Explore the theme"
+msgstr ""
+
+#: patterns/hero-aurora.php:53
+#: patterns/hero-split.php:65
+msgid "Illustration of the Site Editor with a page built from blocks."
+msgstr ""
+
+#: patterns/hero-split.php:3
+msgctxt "Pattern title"
+msgid "Hero: text and image"
+msgstr ""
+
+#: patterns/hero-split.php:8
+msgctxt "Pattern description"
+msgid "A two-column hero with a headline, supporting text, a short checklist and buttons beside an image."
+msgstr ""
+
+#: patterns/hero-split.php:21
+msgid "Design without the busywork"
+msgstr ""
+
+#: patterns/hero-split.php:25
+msgid "Your site, your rules."
+msgstr ""
+
+#: patterns/hero-split.php:29
+msgid "Change colors, fonts and layouts from one place and watch every page follow. Patterns get you started; the Site Editor takes it from there."
+msgstr ""
+
+#: patterns/hero-split.php:35
+msgid "Edit everything visually, no code needed"
+msgstr ""
+
+#: patterns/hero-split.php:39
+msgid "Switch the whole look with one click"
+msgstr ""
+
+#: patterns/hero-split.php:43
+msgid "Fast, accessible and translation-ready"
+msgstr ""
+
+#: patterns/hero-split.php:51
+#: patterns/hero.php:31
+#: patterns/pricing.php:23
+msgid "Get started"
+msgstr ""
+
+#: patterns/hero-split.php:55
+msgid "See how it works"
+msgstr ""
+
+#: patterns/hero.php:3
+msgctxt "Pattern title"
+msgid "Hero: centered"
+msgstr ""
+
+#: patterns/hero.php:8
+msgctxt "Pattern description"
+msgid "A full-width hero with an eyebrow, a large centered headline, supporting text and two buttons on a soft gradient."
+msgstr ""
+
+#: patterns/hero.php:17
+msgid "A block theme for the Site Editor"
+msgstr ""
+
+#: patterns/hero.php:21
+msgid "Build something worth sharing"
+msgstr ""
+
+#: patterns/hero.php:25
+msgid "Start from a pattern, make it yours in Styles, and publish. Every part of this page is a block you can edit."
+msgstr ""
+
+#: patterns/latest-posts.php:3
+msgctxt "Pattern title"
+msgid "Latest posts"
+msgstr ""
+
+#: patterns/latest-posts.php:8
+msgctxt "Pattern description"
+msgid "A heading with a link to the blog above the three most recent posts as cards."
+msgstr ""
+
+#: patterns/latest-posts.php:21
+msgid "From the blog"
+msgstr ""
+
+#: patterns/latest-posts.php:25
+msgid "Latest writing"
+msgstr ""
+
+#: patterns/latest-posts.php:33
+msgid "View all posts"
+msgstr ""
+
+#: patterns/latest-posts.php:55
+msgid "No posts yet. Check back soon."
+msgstr ""
+
+#: patterns/logos.php:3
+msgctxt "Pattern title"
+msgid "Logo wall"
+msgstr ""
+
+#: patterns/logos.php:8
+msgctxt "Pattern description"
+msgid "A short line of text above a row of client or partner logos."
+msgstr ""
+
+#: patterns/logos.php:20
+msgid "Add the logos of your clients or partners here"
+msgstr ""
+
+#: patterns/logos.php:27
+msgid "Logo placeholder"
+msgstr ""
+
+#: patterns/page-about.php:3
+msgctxt "Pattern title"
+msgid "About page"
+msgstr ""
+
+#: patterns/page-about.php:10
+msgctxt "Pattern description"
+msgid "An about page with an intro, a story section with an image, stats, the team and a call to action."
+msgstr ""
+
+#: patterns/page-about.php:25
+msgid "We design and build for the open web."
+msgstr ""
+
+#: patterns/page-about.php:29
+msgid "We are a small studio that believes good websites should be simple to run, quick to load and owned by the people who make them."
+msgstr ""
+
+#: patterns/page-contact.php:3
+msgctxt "Pattern title"
+msgid "Contact page"
+msgstr ""
+
+#: patterns/page-contact.php:10
+msgctxt "Pattern description"
+msgid "A contact page with an intro, contact details, buttons to email or book a call, and an FAQ."
+msgstr ""
+
+#: patterns/page-contact.php:25
+msgid "Whether you have a project in mind or just a question, we would love to hear from you."
+msgstr ""
+
+#: patterns/page-demo.php:3
+msgctxt "Pattern title"
+msgid "Pattern demo page"
+msgstr ""
+
+#: patterns/page-demo.php:10
+msgctxt "Pattern description"
+msgid "A demo page that previews the Logo wall and Testimonials patterns with placeholder content."
+msgstr ""
+
+#: patterns/page-demo.php:22
+msgid "Demo"
+msgstr ""
+
+#: patterns/page-demo.php:30
+msgid "A preview of patterns that need your own content before they go on a real page. Insert them from the block inserter under Patterns → Praxis: Social proof."
+msgstr ""
+
+#: patterns/page-demo.php:35
+msgid "Everything below is placeholder content. The logos, names and quotes are not real."
+msgstr ""
+
+#: patterns/page-landing.php:3
+msgctxt "Pattern title"
+msgid "Landing page"
+msgstr ""
+
+#: patterns/page-landing.php:10
+msgctxt "Pattern description"
+msgid "A complete landing page: animated hero, features, block showcase, style variations, stats, FAQ and a call to action."
+msgstr ""
+
+#: patterns/page-services.php:3
+msgctxt "Pattern title"
+msgid "Services and pricing page"
+msgstr ""
+
+#: patterns/page-services.php:10
+msgctxt "Pattern description"
+msgid "A services page with an intro, a features grid, pricing plans, an FAQ and a call to action."
+msgstr ""
+
+#: patterns/page-services.php:21
+msgid "Services"
+msgstr ""
+
+#: patterns/page-services.php:25
+msgid "Plans for every stage"
+msgstr ""
+
+#: patterns/page-services.php:29
+msgid "From a first portfolio to a busy client roster, pick the support that fits and upgrade when you need to."
+msgstr ""
+
+#: patterns/post-meta.php:3
+msgctxt "Pattern title"
+msgid "Post meta"
+msgstr ""
+
+#: patterns/post-meta.php:6
+msgctxt "Pattern description"
+msgid "Publish date, author and reading time, used by the post-meta template part."
+msgstr ""
+
+#: patterns/post-navigation.php:3
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr ""
+
+#: patterns/post-navigation.php:6
+msgctxt "Pattern description"
+msgid "Links to the previous and next post, used by the single template."
+msgstr ""
+
+#: patterns/post-navigation.php:12
+#: patterns/post-navigation.php:13
+msgid "Posts"
+msgstr ""
+
+#: patterns/pricing.php:3
+msgctxt "Pattern title"
+msgid "Pricing table"
+msgstr ""
+
+#: patterns/pricing.php:8
+msgctxt "Pattern description"
+msgid "Three pricing plans side by side, with the middle plan highlighted, each with a price, a feature checklist and a button."
+msgstr ""
+
+#: patterns/pricing.php:18
+msgid "Starter"
+msgstr ""
+
+#: patterns/pricing.php:19
+msgid "$0"
+msgstr ""
+
+#: patterns/pricing.php:20
+msgid "free forever"
+msgstr ""
+
+#: patterns/pricing.php:21
+msgid "For personal sites and side projects."
+msgstr ""
+
+#: patterns/pricing.php:22
+msgid "Every template and pattern"
+msgstr ""
+
+#: patterns/pricing.php:22
+msgid "All style variations"
+msgstr ""
+
+#: patterns/pricing.php:22
+msgid "Community support"
+msgstr ""
+
+#: patterns/pricing.php:27
+msgid "Studio"
+msgstr ""
+
+#: patterns/pricing.php:28
+msgid "$19"
+msgstr ""
+
+#: patterns/pricing.php:29
+#: patterns/pricing.php:38
+msgid "per month"
+msgstr ""
+
+#: patterns/pricing.php:30
+msgid "For small teams that ship often."
+msgstr ""
+
+#: patterns/pricing.php:31
+msgid "Everything in Starter"
+msgstr ""
+
+#: patterns/pricing.php:31
+msgid "Priority email support"
+msgstr ""
+
+#: patterns/pricing.php:31
+msgid "Design review each quarter"
+msgstr ""
+
+#: patterns/pricing.php:31
+msgid "Custom style variation"
+msgstr ""
+
+#: patterns/pricing.php:32
+msgid "Choose Studio"
+msgstr ""
+
+#: patterns/pricing.php:36
+msgid "Agency"
+msgstr ""
+
+#: patterns/pricing.php:37
+msgid "$49"
+msgstr ""
+
+#: patterns/pricing.php:39
+msgid "For agencies running many client sites."
+msgstr ""
+
+#: patterns/pricing.php:40
+msgid "Everything in Studio"
+msgstr ""
+
+#: patterns/pricing.php:40
+msgid "Unlimited client sites"
+msgstr ""
+
+#: patterns/pricing.php:40
+msgid "Onboarding call"
+msgstr ""
+
+#: patterns/pricing.php:41
+msgid "Talk to us"
+msgstr ""
+
+#: patterns/pricing.php:51
+msgid "Pricing"
+msgstr ""
+
+#: patterns/pricing.php:55
+msgid "Simple plans that grow with you"
+msgstr ""
+
+#: patterns/pricing.php:59
+msgid "No setup fees. Change or cancel your plan at any time."
+msgstr ""
+
+#: patterns/pricing.php:82
+msgid "Most popular"
+msgstr ""
+
+#: patterns/query-loop.php:3
+msgctxt "Pattern title"
+msgid "Query Loop"
+msgstr ""
+
+#: patterns/query-loop.php:6
+msgctxt "Pattern description"
+msgid "Responsive grid of post cards, used by the index, home and archive templates."
+msgstr ""
+
+#: patterns/query-loop.php:33
+msgid "There are no posts here yet."
+msgstr ""
+
+#: patterns/search-results.php:3
+msgctxt "Pattern title"
+msgid "Search results"
+msgstr ""
+
+#: patterns/search-results.php:6
+msgctxt "Pattern description"
+msgid "Compact list of search results with an empty state, used by the search template."
+msgstr ""
+
+#: patterns/search-results.php:31
+msgid "No results matched your search. Try different or fewer keywords."
+msgstr ""
+
+#: patterns/showcase-bento.php:3
+msgctxt "Pattern title"
+msgid "Block showcase (bento grid)"
+msgstr ""
+
+#: patterns/showcase-bento.php:8
+msgctxt "Pattern description"
+msgid "A bento-style grid of cards showing off blocks: a callout, buttons, type, a quote, code and an accordion."
+msgstr ""
+
+#: patterns/showcase-bento.php:35
+msgid "Blocks"
+msgstr ""
+
+#: patterns/showcase-bento.php:39
+msgid "Every block, styled with care"
+msgstr ""
+
+#: patterns/showcase-bento.php:43
+msgid "Core blocks and Praxis blocks share one design language, so whatever you add already fits."
+msgstr ""
+
+#: patterns/showcase-bento.php:53
+msgid "Praxis block"
+msgstr ""
+
+#: patterns/showcase-bento.php:57
+msgid "Callouts for the things that matter"
+msgstr ""
+
+#: patterns/showcase-bento.php:62
+msgid "Every color here comes from the palette, so switching style variations recolors this card too."
+msgstr ""
+
+#: patterns/showcase-bento.php:71
+msgid "Buttons"
+msgstr ""
+
+#: patterns/showcase-bento.php:75
+msgid "Clear calls to action"
+msgstr ""
+
+#: patterns/showcase-bento.php:85
+msgid "Outline"
+msgstr ""
+
+#: patterns/showcase-bento.php:95
+msgid "Typography"
+msgstr ""
+
+#: patterns/showcase-bento.php:103
+msgid "Fluid type that scales smoothly between phone and desktop, in self-hosted fonts."
+msgstr ""
+
+#: patterns/showcase-bento.php:111
+msgid "Quote"
+msgstr ""
+
+#: patterns/showcase-bento.php:117
+msgid "Good design is as little design as possible. Less, but better, because it concentrates on the essential aspects."
+msgstr ""
+
+#: patterns/showcase-bento.php:119
+msgid "Dieter Rams"
+msgstr ""
+
+#: patterns/showcase-bento.php:128
+msgid "Code"
+msgstr ""
+
+#: patterns/showcase-bento.php:132
+msgid "Your design system, in one file"
+msgstr ""
+
+#: patterns/showcase-bento.php:144
+msgid "Details"
+msgstr ""
+
+#: patterns/showcase-bento.php:148
+msgid "Is it really all blocks?"
+msgstr ""
+
+#: patterns/showcase-bento.php:150
+msgid "Yes. Headers, footers, templates and this very card."
+msgstr ""
+
+#: patterns/showcase-bento.php:156
+msgid "Does it need a page builder?"
+msgstr ""
+
+#: patterns/showcase-bento.php:158
+msgid "No. Everything is built into WordPress."
+msgstr ""
+
+#: patterns/sidebar.php:3
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/sidebar.php:6
+msgctxt "Pattern description"
+msgid "Search, recent posts and topics, used by the sidebar template part."
+msgstr ""
+
+#: patterns/sidebar.php:14
+msgid "Search…"
+msgstr ""
+
+#: patterns/stats.php:3
+msgctxt "Pattern title"
+msgid "Stats"
+msgstr ""
+
+#: patterns/stats.php:8
+msgctxt "Pattern description"
+msgid "Four large figures with short labels, separated by thin rules."
+msgstr ""
+
+#: patterns/stats.php:14
+msgid "of the site editable in the Site Editor"
+msgstr ""
+
+#: patterns/stats.php:15
+msgid "lines of jQuery on the front end"
+msgstr ""
+
+#: patterns/stats.php:16
+msgid "contrast-checked default palette"
+msgstr ""
+
+#: patterns/stats.php:17
+msgid "patterns to build pages from"
+msgstr ""
+
+#: patterns/style-variations.php:3
+msgctxt "Pattern title"
+msgid "Style variations showcase"
+msgstr ""
+
+#: patterns/style-variations.php:8
+msgctxt "Pattern description"
+msgid "A preview card for each of the theme's style variations, drawn in that variation's own colors."
+msgstr ""
+
+#: patterns/style-variations.php:28
+msgid "One theme, many looks"
+msgstr ""
+
+#: patterns/style-variations.php:32
+msgid "Switch the whole site’s palette in Appearance → Editor → Styles. Your content stays exactly where it is."
+msgstr ""
+
+#: patterns/team.php:3
+msgctxt "Pattern title"
+msgid "Team"
+msgstr ""
+
+#: patterns/team.php:8
+msgctxt "Pattern description"
+msgid "A heading above a grid of team members, each with a photo, name, role and a short bio."
+msgstr ""
+
+#: patterns/team.php:16
+msgid "Maya Okafor"
+msgstr ""
+
+#: patterns/team.php:16
+msgid "Founder & creative director"
+msgstr ""
+
+#: patterns/team.php:16
+msgid "Sets the direction and still sketches every logo by hand."
+msgstr ""
+
+#: patterns/team.php:17
+msgid "Daniel Brooks"
+msgstr ""
+
+#: patterns/team.php:17
+msgid "Lead developer"
+msgstr ""
+
+#: patterns/team.php:17
+msgid "Turns designs into fast, accessible blocks and templates."
+msgstr ""
+
+#: patterns/team.php:18
+msgid "Sofia Lindqvist"
+msgstr ""
+
+#: patterns/team.php:18
+msgid "Content strategist"
+msgstr ""
+
+#: patterns/team.php:18
+msgid "Makes sure every page says something worth reading."
+msgstr ""
+
+#: patterns/team.php:19
+msgid "Arjun Mehta"
+msgstr ""
+
+#: patterns/team.php:19
+msgid "Product designer"
+msgstr ""
+
+#: patterns/team.php:19
+msgid "Obsesses over spacing, type and the details in between."
+msgstr ""
+
+#: patterns/team.php:27
+msgid "Team"
+msgstr ""
+
+#: patterns/team.php:31
+msgid "The people behind the work"
+msgstr ""
+
+#: patterns/team.php:35
+msgid "A small, senior team that designs, builds and writes for the web."
+msgstr ""
+
+#: patterns/testimonials.php:3
+msgctxt "Pattern title"
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/testimonials.php:8
+msgctxt "Pattern description"
+msgid "A heading above three testimonial cards, each with a quote and the person's photo, name and role."
+msgstr ""
+
+#: patterns/testimonials.php:17
+msgid "Sample testimonial. Replace this with a short quote from a customer about the result you delivered for them."
+msgstr ""
+
+#: patterns/testimonials.php:18
+msgid "Another placeholder quote. Two or three sentences work best: specific, in the customer’s own words."
+msgstr ""
+
+#: patterns/testimonials.php:19
+msgid "A third sample quote. Ask before publishing a real customer’s name, photo and words."
+msgstr ""
+
+#: patterns/testimonials.php:27
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/testimonials.php:31
+msgid "What our customers say"
+msgstr ""
+
+#: patterns/testimonials.php:54
+msgid "Customer name"
+msgstr ""
+
+#: patterns/testimonials.php:58
+msgid "Job title, Company"
+msgstr ""
+
+#: build/blocks/callout/index.js:1
+msgid "Write your callout…"
+msgstr ""
+
+#: build/blocks/callout/index.js:1
+msgid "Add context or a side note."
+msgstr ""
+
+#: build/blocks/callout/index.js:1
+msgid "Share a shortcut or a helpful suggestion."
+msgstr ""
+
+#: build/blocks/callout/index.js:1
+msgid "Point out a risk or something to watch for."
+msgstr ""
+
+#: build/blocks/callout/index.js:1
+msgid "Confirm that something worked or is done."
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:1
+msgid "Getting started"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:1
+msgid "Install the theme"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:1
+msgid "Pick a style"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:1
+msgid "Building pages"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:1
+msgid "Settings"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:1
+msgid "Include headings down to"
+msgstr ""
+
+#. translators: %d: Heading level, from 2 to 6.
+#: build/blocks/table-of-contents/index.js:3
+#, js-format
+msgid "Heading %d"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:3
+msgid "Show title"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:3
+msgid "Numbered list"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:3
+msgid "Table of Contents"
+msgstr ""
+
+#: build/blocks/table-of-contents/index.js:3
+msgid "Lists the headings on this page. It shows up once the page has at least two headings to list."
+msgstr ""
+
+#. translators: %s: Palette color name.
+#: build/js/accent-control.js:2
+#, js-format
+msgid "This block uses %s. Clear it to use the site default."
+msgstr ""
+
+#. translators: %s: Palette color name.
+#: build/js/accent-control.js:3
+#, js-format
+msgid "Using the site default (%s). Pick a color to give this block its own accent."
+msgstr ""
+
+#: build/js/accent-control.js:3
+msgid "Blocks inside inherit it unless they pick their own."
+msgstr ""
+
+#: build/js/accent-control.js:3
+msgid "Accent color"
+msgstr ""
+
+#: build/js/settings.js:1
+msgid "Block accents"
+msgstr ""
+
+#: build/js/settings.js:1
+msgid "Add accent colors to core blocks"
+msgstr ""
+
+#: build/js/settings.js:1
+msgid "Quote and pullquote rules, separators, list markers, table header rules, accordion and details toggles, the selected tab, code edges and link underlines take a palette color. Text colors don’t change. Each block can pick its own accent in its Styles settings."
+msgstr ""
+
+#: build/js/settings.js:1
+msgid "Default accent color"
+msgstr ""
+
+#. translators: %s: Palette color name.
+#: build/js/settings.js:2
+#, js-format
+msgid "Blocks use %s unless they pick their own accent."
+msgstr ""
+
+#: build/js/settings.js:2
+msgid "Pick a palette color."
+msgstr ""
+
+#: build/js/settings.js:2
+msgid "Settings saved."
+msgstr ""
+
+#: build/js/settings.js:2
+msgid "Save changes"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block title"
+msgid "Callout"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block description"
+msgid "Draw attention to a note, tip, warning or success message."
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "note"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "tip"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "warning"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "success"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "notice"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "alert"
+msgstr ""
+
+#: build/blocks/callout/block.json
+msgctxt "block keyword"
+msgid "admonition"
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block title"
+msgid "Table of Contents"
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block description"
+msgid "List the headings on the page, with links to each one."
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block keyword"
+msgid "toc"
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block keyword"
+msgid "contents"
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block keyword"
+msgid "headings"
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block keyword"
+msgid "navigation"
+msgstr ""
+
+#: build/blocks/table-of-contents/block.json
+msgctxt "block keyword"
+msgid "on this page"
+msgstr ""
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Border radius size name"
+msgid "Pill"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Line"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Muted"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+#: styles/colors/indigo.json
+#: styles/colors/terracotta.json
+#: styles/dark.json
+#: styles/high-contrast.json
+#: styles/warm.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Primary to contrast"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Secondary to base"
+msgstr ""
+
+#: theme.json
+#: styles/dark.json
+msgctxt "Shadow name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+#: styles/dark.json
+msgctxt "Shadow name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+#: styles/dark.json
+msgctxt "Shadow name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "S"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "M"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "L"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Space Grotesk"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json
+#: styles/typography/editorial.json
+#: styles/typography/signal.json
+#: styles/warm.json
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header (Centered)"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header (Minimal)"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer (Minimal)"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer (Columns)"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Meta"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Comments"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (No Title)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Landing (No Header or Footer)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Wide"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "With Sidebar"
+msgstr ""
+
+#: styles/blocks/card.json
+msgctxt "Style variation name"
+msgid "Card"
+msgstr ""
+
+#: styles/blocks/eyebrow.json
+msgctxt "Style variation name"
+msgid "Eyebrow"
+msgstr ""
+
+#: styles/colors/indigo.json
+msgctxt "Style variation name"
+msgid "Indigo"
+msgstr ""
+
+#: styles/colors/terracotta.json
+msgctxt "Style variation name"
+msgid "Terracotta"
+msgstr ""
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr ""
+
+#: styles/high-contrast.json
+msgctxt "Style variation name"
+msgid "High contrast"
+msgstr ""
+
+#: styles/sections/section-inverse.json
+msgctxt "Style variation name"
+msgid "Inverse"
+msgstr ""
+
+#: styles/typography/editorial.json
+msgctxt "Style variation name"
+msgid "Editorial"
+msgstr ""
+
+#: styles/typography/editorial.json
+#: styles/warm.json
+msgctxt "Font family name"
+msgid "Fraunces"
+msgstr ""
+
+#: styles/typography/editorial.json
+#: styles/warm.json
+msgctxt "Font family name"
+msgid "Instrument Sans"
+msgstr ""
+
+#: styles/typography/signal.json
+msgctxt "Style variation name"
+msgid "Signal"
+msgstr ""
+
+#: styles/typography/signal.json
+msgctxt "Font family name"
+msgid "Bricolage Grotesque"
+msgstr ""
+
+#: styles/typography/signal.json
+msgctxt "Font family name"
+msgid "Figtree"
+msgstr ""
+
+#: styles/warm.json
+msgctxt "Style variation name"
+msgid "Warm"
+msgstr ""

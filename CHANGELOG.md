@@ -8,6 +8,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Font preloading: the regular latin face of the active body and heading fonts is preloaded, following the style variation or fonts picked in Styles. Filter: `praxis_preload_fonts`.
+- Form fields (search, comments) use the palette instead of the browser default, so they read well in Dark and other variations.
+- A visible focus ring for form fields, checkboxes, menu buttons and other controls not styled by `theme.json`.
+- `praxis/languages/praxis.pot` and a `composer make-pot` script (WP-CLI i18n command) to regenerate it. Block editor scripts also load translations from the theme's `languages/` folder.
+
 - **Appearance → Praxis** settings page (admins only), built with `@wordpress/components` and saved through the REST API (`praxis_settings` option).
 - Block accents: core blocks take a palette color on their details (quote and pullquote rules, separators, list markers, Checklist marks, table header rules, Details and Accordion toggles, the selected tab, code/preformatted/verse edges, link underlines, Icon, the Note callout and the Table of Contents rule). On by default with Primary; switch it off or change the default color on the settings page. Each supported block can choose its own palette color under Styles → Accent color, and Groups and Columns pass theirs to the blocks inside. Text colors never change. Filters: `praxis_block_accents`, `praxis_accent_blocks`.
 - Pattern library under "Praxis: …" inserter categories: Aurora, Centered and Text-and-image heroes; Features grid, Image and checklist, Block showcase (bento grid) and Style variations showcase; Logo wall, Stats and Testimonials; Pricing table; FAQ; Team; Contact details; Banner and Split calls to action; and Latest posts.
@@ -40,6 +45,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- The theme's own stylesheets (`theme.css`, `accents.css`, and the child's `style.css`) are printed inline in the head while they're small, instead of as render-blocking files.
+- The Quote rule moved from `theme.json` to `assets/css/blocks/core-quote.css` so it sits on the start edge in right-to-left languages. Its color is the new `settings.custom.quote.rule` token, which style variations set; a block accent still overrides it.
+- Terracotta color preset: the Accent color is now a light sage (`#9fd3bd`) instead of dark green, like the other palettes' bright accents.
+
 - With block accents on (the default), quote bars, separators, the pullquote top rule and other block details use the accent color (Primary) instead of their previous fixed colors. Turning accents off on Appearance → Praxis restores the previous look.
 - Callout block: now holds any blocks instead of a single paragraph, and comes in Note, Tip, Warning and Success types, each with an icon, accent color and a label for screen readers. It's rendered on the server, adds border, typography and shadow settings, and callouts saved by 0.1 are migrated when opened in the editor (until then they still display correctly).
 - The FAQ pattern uses the core Accordion block instead of Details.
@@ -57,6 +66,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `npm run lint:css` also checks `assets/css/`.
 
 ### Fixed
+
+- Focus rings on Inverse sections were nearly invisible (Primary on a near-black background, 1.6:1). Links and buttons there now get a light ring, in every variation.
+- Terracotta: buttons and link hovers on Inverse sections were dark on dark (2.3:1).
+- Search template: the search label and button text were hard-coded in English; they now use core's translated defaults.
+- The navigation underline grows from the right in right-to-left languages.
 
 - The "Border" palette color (slug `border`) generated a `.has-border-color` text-color class that clashes with the class core adds to any block with a custom border color, so those blocks got pale text. The slug is now `line` ("Line"). Sites that used `var(--wp--preset--color--border)` in custom CSS need to switch to `--line`.
 - Outline buttons on Inverse sections were nearly invisible; they now follow the section's text color.

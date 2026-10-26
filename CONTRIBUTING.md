@@ -35,7 +35,8 @@ docker run --rm -v "$PWD":/app -w /app composer:2 lint
 ```
 
 - Prefix PHP functions, constants and hooks with `praxis_` (`praxis_child_` in the child theme).
-- Make every user-facing string translatable with the `praxis` (or `praxis-child`) text domain.
+- Make every user-facing string translatable with the `praxis` (or `praxis-child`) text domain. Keep text out of `templates/` and `parts/` (HTML can't be translated): put it in a PHP pattern and reference that instead.
+- After changing strings, run `npm run build` and then `composer make-pot` to regenerate `praxis/languages/praxis.pot`. Through Docker, add `-e WP_CLI_ALLOW_ROOT=1` to the `docker run` command. Translators make JSON files for the block editor scripts from their `.po` file with `wp i18n make-json praxis/languages --no-purge`.
 - Escape output late (`esc_html`, `esc_attr`, `esc_url`, `wp_kses_post`).
 
 ## Where things go

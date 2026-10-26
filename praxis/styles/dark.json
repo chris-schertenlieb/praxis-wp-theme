@@ -38,11 +38,16 @@
 					"heading": { "color": { "text": "var:preset|color|contrast" } },
 					"link": {
 						"color": { "text": "var:preset|color|contrast" },
-						":hover": { "color": { "text": "var:preset|color|accent" } }
+						":hover": { "color": { "text": "var:preset|color|accent" } },
+						":focus-visible": { "outline": { "color": "var:preset|color|contrast" } }
 					},
 					"button": {
 						"color": { "background": "var:preset|color|accent", "text": "var:preset|color|base" },
-						":hover": { "color": { "background": "var:preset|color|contrast", "text": "var:preset|color|base" } }
+						":hover": { "color": { "background": "var:preset|color|contrast", "text": "var:preset|color|base" } },
+						":focus-visible": {
+							"color": { "background": "var:preset|color|contrast", "text": "var:preset|color|base" },
+							"outline": { "color": "var:preset|color|contrast" }
+						}
 					}
 				}
 			}

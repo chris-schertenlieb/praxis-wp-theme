@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Enqueues child theme styles after the parent theme's.
+ *
+ * Like the parent's, the stylesheet is printed inline while it's small.
  */
 function praxis_child_enqueue_styles() {
 	wp_enqueue_style(
@@ -21,5 +23,6 @@ function praxis_child_enqueue_styles() {
 		array( 'praxis-style' ),
 		wp_get_theme()->get( 'Version' )
 	);
+	wp_style_add_data( 'praxis-child-style', 'path', get_stylesheet_directory() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'praxis_child_enqueue_styles' );

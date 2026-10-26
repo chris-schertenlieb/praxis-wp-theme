@@ -24,6 +24,17 @@ function praxis_register_blocks() {
 	}
 
 	wp_register_block_types_from_metadata_collection( $build_dir, $manifest );
+
+	// Core only looks for block script translations in wp-content/languages.
+	// Also look in the theme's own languages/ folder (see `composer make-pot`).
+	foreach ( WP_Block_Type_Registry::get_instance()->get_all_registered() as $name => $block_type ) {
+		if ( 0 !== strpos( $name, 'praxis/' ) ) {
+			continue;
+		}
+		foreach ( $block_type->editor_script_handles as $handle ) {
+			wp_set_script_translations( $handle, 'praxis', PRAXIS_DIR . '/languages' );
+		}
+	}
 }
 add_action( 'init', 'praxis_register_blocks' );
 
